@@ -5,20 +5,17 @@ using UnityEngine.UI;
 
 public class PlayerToken : MonoBehaviour 
 {
-    [Tooltip("The tile the PlayerToken will start on.")]
     public Tile startingTile;
+    Tile currentTile;
+    Tile finalTile;
+    Tile[] moveQueue;
+    int moveQueueIndex;
+    
     public DiceManager diceManager;
     public Text valueText;
 
-    Tile currentTile;
-
-    Tile[] moveQueue;
-    int moveQueueIndex;
-
     Vector3 targetPosition;
     Vector3 velocity;
-
-    Tile finalTile;
 	
     void Awake()
     {
@@ -44,6 +41,16 @@ public class PlayerToken : MonoBehaviour
         }
 	}
 
+    void SetNewTargetPosition(Vector3 pos)
+    {
+        targetPosition = pos;
+        velocity = Vector3.zero;
+    }
+
+
+
+
+
     public void MovePlayerToken()
     {
         int spacesToMove = diceManager.totalValue;
@@ -64,12 +71,6 @@ public class PlayerToken : MonoBehaviour
         moveQueueIndex = 0;
     }
 
-
-    void SetNewTargetPosition(Vector3 pos)
-    {
-        targetPosition = pos;
-        velocity = Vector3.zero;
-    }
 
   
    

@@ -7,19 +7,10 @@ public class Dice : MonoBehaviour
 {
     [HideInInspector]
     public bool isRolling;
-
-    [Tooltip("Which value is facing up after being rolled (1-6)")]
-    public int value;
-
-    [Tooltip("Minimum strength of the roll force")]   
     public float minRollForce;
-
-    [Tooltip("Maximum strength of the roll force")]
     public float maxRollForce;
-
+    public int value;
     Rigidbody rb;
-
-    //This event is called when the dice stops moving.
     public UnityEvent RollEvent;
 
 	void Awake () 
