@@ -35,6 +35,20 @@ public class money : MonoBehaviour
             balance -= subtractedMoney;
             balanceText.text = balance.ToString();
 
-    } 
+    }
+
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Pick Up"))
+        {
+            
+            addMoney(200);
+        }
+
+    }
+
+
+
 
 }

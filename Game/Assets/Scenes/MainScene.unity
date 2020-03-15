@@ -236,7 +236,7 @@ Transform:
   - {fileID: 1694904763}
   - {fileID: 298938783}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &112962926
 GameObject:
@@ -360,6 +360,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1d2c98614ad94b03a8e001b1f946a21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &222930791
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6981703668999752440, guid: 59b5b128bba6bc24ab92720f775e66f6,
+        type: 3}
+      propertyPath: m_Name
+      value: pickup (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981703668999752445, guid: 59b5b128bba6bc24ab92720f775e66f6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981703668999752445, guid: 59b5b128bba6bc24ab92720f775e66f6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981703668999752445, guid: 59b5b128bba6bc24ab92720f775e66f6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.9415078
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981703668999752445, guid: 59b5b128bba6bc24ab92720f775e66f6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.46193978
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981703668999752445, guid: 59b5b128bba6bc24ab92720f775e66f6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.19134173
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981703668999752445, guid: 59b5b128bba6bc24ab92720f775e66f6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19134173
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981703668999752445, guid: 59b5b128bba6bc24ab92720f775e66f6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.84462327
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981703668999752445, guid: 59b5b128bba6bc24ab92720f775e66f6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981703668999752445, guid: 59b5b128bba6bc24ab92720f775e66f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981703668999752445, guid: 59b5b128bba6bc24ab92720f775e66f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981703668999752445, guid: 59b5b128bba6bc24ab92720f775e66f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 45
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 59b5b128bba6bc24ab92720f775e66f6, type: 3}
 --- !u!1 &239269708
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,6 +442,7 @@ GameObject:
   - component: {fileID: 239269710}
   - component: {fileID: 239269709}
   - component: {fileID: 239269713}
+  - component: {fileID: 239269714}
   m_Layer: 0
   m_Name: Player_Token
   m_TagString: Untagged
@@ -451,7 +521,7 @@ Transform:
   m_LocalScale: {x: 0.24716665, y: 0.4156658, z: 0.24716665}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &239269713
 MonoBehaviour:
@@ -468,6 +538,20 @@ MonoBehaviour:
   startingTile: {fileID: 1685158493}
   diceManager: {fileID: 265668476}
   valueText: {fileID: 1656769633}
+--- !u!114 &239269714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239269708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a758c2c8e808b904ba1120b444e079b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balance: 0
+  balanceText: {fileID: 2067054435}
 --- !u!1001 &239694791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -599,7 +683,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &298938782 stripped
 MonoBehaviour:
@@ -1025,7 +1109,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &434389486
 PrefabInstance:
@@ -1261,7 +1345,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &569767389
 PrefabInstance:
@@ -2345,7 +2429,7 @@ Transform:
   m_LocalScale: {x: 1.5268, y: 1.5268, z: 1.5268}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 55.837, y: 300.674, z: -13.948001}
 --- !u!65 &893890962
 BoxCollider:
@@ -2436,9 +2520,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isRolling: 0
-  value: 0
   minRollForce: 50
   maxRollForce: 60
+  value: 0
   RollEvent:
     m_PersistentCalls:
       m_Calls:
@@ -2549,7 +2633,6 @@ GameObject:
   - component: {fileID: 932555226}
   - component: {fileID: 932555225}
   - component: {fileID: 932555224}
-  - component: {fileID: 932555228}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2635,27 +2718,13 @@ RectTransform:
   - {fileID: 2067054434}
   - {fileID: 1810442496}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &932555228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932555223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a758c2c8e808b904ba1120b444e079b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balance: 0
-  balanceText: {fileID: 2067054435}
 --- !u!1001 &967303698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4293,9 +4362,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isRolling: 0
-  value: 0
   minRollForce: 50
   maxRollForce: 60
+  value: 0
   RollEvent:
     m_PersistentCalls:
       m_Calls:
@@ -4399,7 +4468,7 @@ Transform:
   m_LocalScale: {x: 1.6344296, y: 1.6344296, z: 1.6344296}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -46.086002, y: -82.674, z: 77.033005}
 --- !u!1 &1741363517
 GameObject:
