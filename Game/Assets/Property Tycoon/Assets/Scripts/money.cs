@@ -39,18 +39,12 @@ public class money : MonoBehaviour
     }
 
 
-    void OnTriggerEnter(Collider other)
+     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Pick Up"))
         {
-          
+            
             addMoney(200);
-        }
-
-        if (other.gameObject.CompareTag("tax"))
-        {
-
-            addMoney(1000);
         }
 
     }
@@ -65,7 +59,7 @@ public class money : MonoBehaviour
             timer = timer + Time.deltaTime;
             if (timer > 1)
             {
-                addMoney(500);
+                subtractMoney(100);
             }
         }
     }
