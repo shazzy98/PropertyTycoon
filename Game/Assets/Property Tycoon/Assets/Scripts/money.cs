@@ -8,7 +8,9 @@ public class money : MonoBehaviour
 {
     public int balance;
     public Text balanceText;
-    
+    float timer = 0;
+
+
 
     void Start()
     {
@@ -35,6 +37,39 @@ public class money : MonoBehaviour
             balance -= subtractedMoney;
             balanceText.text = balance.ToString();
 
-    } 
+    }
+
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Pick Up"))
+        {
+            addMoney(200);
+ 
+            }
+
+
+        if (other.gameObject.CompareTag("tax"))
+        {
+            timer = timer + Time.deltaTime;
+            if (timer > 2)
+            {
+
+                addMoney(400);
+            }
+
+        }
+
+
+    }
+
+
+    
+
+
+
+ 
+
+
 
 }
