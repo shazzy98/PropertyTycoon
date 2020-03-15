@@ -8,7 +8,8 @@ public class money : MonoBehaviour
 {
     public int balance;
     public Text balanceText;
-    
+    float timer = 0;
+
 
     void Start()
     {
@@ -42,11 +43,33 @@ public class money : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Pick Up"))
         {
-            
+          
             addMoney(200);
         }
 
+        if (other.gameObject.CompareTag("tax"))
+        {
+
+            addMoney(1000);
+        }
+
     }
+
+
+
+    void OnTriggerStay(Collider other)
+    {
+       
+        if (other.gameObject.CompareTag("tax"))
+        {
+            timer = timer + Time.deltaTime;
+            if (timer > 1)
+            {
+                addMoney(500);
+            }
+        }
+    }
+
 
 
 
