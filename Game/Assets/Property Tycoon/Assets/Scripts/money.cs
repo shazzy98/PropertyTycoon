@@ -9,12 +9,15 @@ public class money : MonoBehaviour
     public int balance;
     public Text balanceText;
     float timer = 0;
+    public GameObject WarpExit;
+    
 
 
     void Start()
     {
         balance = 1500;
         balanceText.text = balance.ToString();
+        
     }
 
 
@@ -47,6 +50,13 @@ public class money : MonoBehaviour
             addMoney(200);
         }
 
+
+        if (other.gameObject.CompareTag("tax2"))
+        {
+            Debug.Log("IN WARP ZONE");
+            transform.position = WarpExit.transform.position;
+        }
+
     }
 
 
@@ -62,10 +72,16 @@ public class money : MonoBehaviour
                 subtractMoney(100);
             }
         }
+
+        }
+
+
+
+
     }
 
 
 
 
 
-}
+
