@@ -10,6 +10,7 @@ public class money : MonoBehaviour
     public Text balanceText;
     float timer = 0;
     public GameObject WarpExit;
+    public bool stay = false;
     
 
 
@@ -50,13 +51,6 @@ public class money : MonoBehaviour
             addMoney(200);
         }
 
-
-        if (other.gameObject.CompareTag("tax2"))
-        {
-            Debug.Log("IN WARP ZONE");
-            transform.position = WarpExit.transform.position;
-        }
-
     }
 
 
@@ -67,14 +61,40 @@ public class money : MonoBehaviour
         if (other.gameObject.CompareTag("tax"))
         {
             timer = timer + Time.deltaTime;
-            if (timer > 1)
+            if ((timer > 1) && timer <1.1)
             {
-                subtractMoney(100);
+                stay = true;
+                tax();
+                
+            }
+
+           
+        }
+
+        if (other.gameObject.CompareTag("jail"))
+        {
+            timer = timer + Time.deltaTime;
+            if (timer > 1) 
+            { 
+            Debug.Log("Going to Jail");
+            transform.position = WarpExit.transform.position;
             }
         }
 
-        }
 
+    }
+
+
+
+    void tax()
+    {
+        if (stay == true)
+        {
+            Debug.Log("Income Tax 200");
+            subtractMoney(40);
+            stay = false;
+        }
+    }
 
 
 
