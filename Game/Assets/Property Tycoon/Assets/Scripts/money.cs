@@ -11,11 +11,15 @@ public class money : MonoBehaviour
     float timer = 0;
     public GameObject WarpExit;
     public bool stay = false;
+    public Image customImage;
+  
+    
     
 
 
     void Start()
     {
+        customImage.enabled = false;
         balance = 1500;
         balanceText.text = balance.ToString();
         
@@ -25,6 +29,7 @@ public class money : MonoBehaviour
     void Update()
     {
         
+
     }
 
 
@@ -49,6 +54,7 @@ public class money : MonoBehaviour
         {
             
             addMoney(200);
+            
         }
 
     }
@@ -80,6 +86,24 @@ public class money : MonoBehaviour
             transform.position = WarpExit.transform.position;
             }
         }
+
+
+        if (other.gameObject.CompareTag("NardoleDriveBlue"))
+        {
+            timer = timer + Time.deltaTime;
+            if (timer > 1)
+            {
+                Debug.Log("NardoleDriveBlue");
+                customImage.enabled = true;
+                
+
+
+            }
+        }
+
+
+
+
 
 
     }
