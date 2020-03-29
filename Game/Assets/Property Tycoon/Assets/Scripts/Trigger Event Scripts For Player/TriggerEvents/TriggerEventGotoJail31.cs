@@ -6,6 +6,9 @@ using UnityEngine.Events;
 
 public class TriggerEventGotoJail31 : MonoBehaviour
 {
+
+    public money Money;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag ("Player"))
@@ -23,6 +26,7 @@ public class TriggerEventGotoJail31 : MonoBehaviour
     void OnTriggerStay(Collider other)
     {
         Debug.Log("Player is at Go to Jail");
+        Money.GetComponent<money>().goToJail();
     }
 
 }

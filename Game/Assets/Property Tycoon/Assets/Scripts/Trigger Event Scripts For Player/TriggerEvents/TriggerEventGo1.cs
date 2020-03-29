@@ -6,10 +6,13 @@ using UnityEngine.Events;
 
 public class TriggerEventGo1 : MonoBehaviour
 {
+    public money Money;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag ("Player"))
         {
+            Money.GetComponent<money>().addMoney(200);
             Debug.Log("Player moved to GO");
         }
     }

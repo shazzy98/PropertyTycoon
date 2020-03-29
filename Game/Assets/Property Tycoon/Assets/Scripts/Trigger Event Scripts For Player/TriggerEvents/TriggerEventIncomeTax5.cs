@@ -6,6 +6,12 @@ using UnityEngine.Events;
 
 public class TriggerEventIncomeTax5 : MonoBehaviour
 {
+    float timer = 0;
+    public money Money;
+  
+
+
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag ("Player"))
@@ -22,7 +28,16 @@ public class TriggerEventIncomeTax5 : MonoBehaviour
     }
     void OnTriggerStay(Collider other)
     {
-        Debug.Log("Player is at Income Tax");
+
+        timer = timer + Time.deltaTime;
+        if ((timer > 1) && timer < 1.1)
+        {
+          
+            Money.GetComponent<money>().subtractMoney(40);
+            Debug.Log("Player is at Income Tax");
+        }
     }
+
+
 
 }
