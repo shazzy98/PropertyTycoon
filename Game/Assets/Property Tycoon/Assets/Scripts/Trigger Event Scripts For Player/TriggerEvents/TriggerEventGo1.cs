@@ -7,12 +7,16 @@ using UnityEngine.Events;
 public class TriggerEventGo1 : MonoBehaviour
 {
     public money Money;
+    public Bank bank;
+
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag ("Player"))
         {
             Money.GetComponent<money>().addMoney(200);
+            bank.GetComponent<Bank>().subtractBank(200);
+
             Debug.Log("Player moved to GO");
         }
     }

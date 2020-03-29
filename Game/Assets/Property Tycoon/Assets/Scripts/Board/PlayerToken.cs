@@ -16,7 +16,10 @@ public class PlayerToken : MonoBehaviour
 
     Vector3 targetPosition;
     Vector3 velocity;
-	
+  
+
+  
+
     void Awake()
     {
         finalTile = startingTile;

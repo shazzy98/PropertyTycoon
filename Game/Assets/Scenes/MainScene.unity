@@ -324,6 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Money: {fileID: 239269714}
+  bank: {fileID: 1402768094}
 --- !u!1 &28739148
 GameObject:
   m_ObjectHideFlags: 0
@@ -7396,6 +7397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Money: {fileID: 239269714}
+  bank: {fileID: 0}
 --- !u!1001 &1291084625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8967,6 +8969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Money: {fileID: 239269714}
+  bank: {fileID: 0}
 --- !u!1001 &1641336297
 PrefabInstance:
   m_ObjectHideFlags: 0

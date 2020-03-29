@@ -13,21 +13,27 @@ public class Bank : MonoBehaviour
     void Start()
     {
 
-        bankBalance = 5000;
+        bankBalance = 5200;
         bankBalanceText.text = bankBalance.ToString();
 
     }
 
 
 
-    public void subtractBank(int subtractedMoney)
+    public void subtractBank(int subtractedMoney2)
     {
 
-        bankBalance -= subtractedMoney;
+        bankBalance -= subtractedMoney2;
         bankBalanceText.text = bankBalance.ToString();
 
     }
 
+
+    public void addBank(int addedMoney2)
+    {
+        bankBalance += addedMoney2;
+        bankBalanceText.text = bankBalance.ToString();
+    }
 
 }
 

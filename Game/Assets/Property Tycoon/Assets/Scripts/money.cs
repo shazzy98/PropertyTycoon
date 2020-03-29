@@ -11,7 +11,7 @@ public class money : MonoBehaviour
     float timer = 0;
     public GameObject WarpExit;
     public bool stay = false;
-
+    
   
     
     
@@ -46,7 +46,6 @@ public class money : MonoBehaviour
             balanceText.text = balance.ToString();
 
     }
-
 
 
 

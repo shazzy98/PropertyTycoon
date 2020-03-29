@@ -9,6 +9,8 @@ public class TriggerEventSuperTax39 : MonoBehaviour
 
     float timer = 0;
     public money Money;
+    public Bank bank;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag ("Player"))
@@ -30,6 +32,7 @@ public class TriggerEventSuperTax39 : MonoBehaviour
         {
 
             Money.GetComponent<money>().subtractMoney(20);
+            bank.GetComponent<Bank>().addBank(20);
             Debug.Log("Player is at Super Tax");
         }
     }

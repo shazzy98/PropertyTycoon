@@ -8,6 +8,7 @@ public class TriggerEventIncomeTax5 : MonoBehaviour
 {
     float timer = 0;
     public money Money;
+    public Bank bank;
   
 
 
@@ -34,6 +35,7 @@ public class TriggerEventIncomeTax5 : MonoBehaviour
         {
           
             Money.GetComponent<money>().subtractMoney(40);
+            bank.GetComponent<Bank>().addBank(40);
             Debug.Log("Player is at Income Tax");
         }
     }
