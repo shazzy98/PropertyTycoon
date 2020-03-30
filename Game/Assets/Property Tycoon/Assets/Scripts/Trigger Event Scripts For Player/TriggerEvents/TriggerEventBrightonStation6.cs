@@ -6,6 +6,18 @@ using UnityEngine.Events;
 
 public class TriggerEventBrightonStation6 : MonoBehaviour
 {
+    string Group = "Station";
+    string Action = "";
+    string canBeBought = "Yes";
+    string OwnedBy = "";
+    int Cost = 200;
+    int unimprovedRent = 0;
+    int PropertyOne = 25;
+    int PropertyTwo = 50;
+    int PropertyThree = 100;
+    int PropertyFour = 200;
+    int hotel = 0;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag ("Player"))

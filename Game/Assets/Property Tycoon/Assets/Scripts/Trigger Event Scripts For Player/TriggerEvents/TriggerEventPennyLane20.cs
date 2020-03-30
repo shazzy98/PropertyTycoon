@@ -6,6 +6,20 @@ using UnityEngine.Events;
 
 public class TriggerEventPennyLane20 : MonoBehaviour
 {
+
+    string Group = "Orange";
+    string Action = "";
+    string canBeBought = "Yes";
+    string OwnedBy = "";
+    int Cost = 200;
+    int unimprovedRent = 16;
+    int PropertyOne = 80;
+    int PropertyTwo = 220;
+    int PropertyThree = 600;
+    int PropertyFour = 800;
+    int hotel = 1000;
+
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag ("Player"))
