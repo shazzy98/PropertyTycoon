@@ -8,12 +8,33 @@ using UnityEngine.Events;
 
 public class TriggerEventPotLuck34 : MonoBehaviour
 {
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag ("Player"))
         {
-            Debug.Log("Player moved to Pot Luck 34");
+            Debug.Log("Player Moved to ");
         }
+        if (other.CompareTag ("Player2"))
+        {
+            Debug.Log("Player2 Moved to ");
+        }
+        if (other.CompareTag ("Player3"))
+        {
+            Debug.Log("Player3 Moved to ");
+        }
+        if (other.CompareTag ("Player4"))
+        {
+            Debug.Log("Player4 Moved to ");
+        }
+        if (other.CompareTag ("Player5"))
+        {
+            Debug.Log("Player5 Moved to ");
+        }
+        if (other.CompareTag ("Player6"))
+        {
+            Debug.Log("Player6 Moved to ");
+        }   
     }
     void OnTriggerExit(Collider other)
     {
@@ -21,10 +42,26 @@ public class TriggerEventPotLuck34 : MonoBehaviour
         {
             Debug.Log("Exit Square");
         }
-    }
-    void OnTriggerStay(Collider other)
-    {
-        Debug.Log("Player is at Pot Luck 34");
+        if (other.CompareTag ("Player2"))
+        {
+            Debug.Log("Player2 Exit Square");
+        }
+        if (other.CompareTag ("Player3"))
+        {
+            Debug.Log("Player3 Exit Square");
+        }        
+        if (other.CompareTag ("Player4"))
+        {
+            Debug.Log("Player4 Exit Square");
+        }
+        if (other.CompareTag ("Player5"))
+        {
+            Debug.Log("Player5 Exit Square");
+        }
+        if (other.CompareTag ("Player6"))
+        {
+            Debug.Log("Player6 Exit Square");
+        }        
     }
 
 }
