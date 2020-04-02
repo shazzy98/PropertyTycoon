@@ -23,8 +23,7 @@ public class TriggerEventTeslaPowerCo13 : MonoBehaviour
             if (OwnedBy != "none")
             {
                 Debug.Log("TP utilities rent is 10* dice roll");
-                rent = PlayerToken.moveQueueIndex * 10;
-                //rent = diceRoll * 10 
+                rent = PlayerToken.moveQueueIndex * 10; 
             }
         }
         if (TriggerEventEdisonWater29.OwnedBy != OwnedBy)
