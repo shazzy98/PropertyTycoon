@@ -9,7 +9,7 @@ public class PlayerToken : MonoBehaviour
     Tile currentTile;
     Tile finalTile;
     Tile[] moveQueue;
-    int moveQueueIndex;
+    public static int moveQueueIndex;
     
     public DiceManager diceManager;
     public Text valueText;
