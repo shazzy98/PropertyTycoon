@@ -47,10 +47,6 @@ public class PlayerToken : MonoBehaviour
         velocity = Vector3.zero;
     }
 
-
-
-
-
     public void MovePlayerToken()
     {
         int spacesToMove = diceManager.totalValue;

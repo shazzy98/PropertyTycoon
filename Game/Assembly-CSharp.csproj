@@ -53,8 +53,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Property Tycoon\Assets\Scripts\Board\BootPlayer.cs" />
+     <Compile Include="Assets\Property Tycoon\Assets\Scripts\Board\CatPlayer5.cs" />
      <Compile Include="Assets\Property Tycoon\Assets\Scripts\Board\Gameplay.cs" />
+     <Compile Include="Assets\Property Tycoon\Assets\Scripts\Board\GobletPlayer3.cs" />
+     <Compile Include="Assets\Property Tycoon\Assets\Scripts\Board\HatstandPlayer4.cs" />
      <Compile Include="Assets\Property Tycoon\Assets\Scripts\Board\PlayerToken.cs" />
+     <Compile Include="Assets\Property Tycoon\Assets\Scripts\Board\SmartphonePlayer2.cs" />
+     <Compile Include="Assets\Property Tycoon\Assets\Scripts\Board\SpoonPlayer6.cs" />
      <Compile Include="Assets\Property Tycoon\Assets\Scripts\Board\Tile.cs" />
      <Compile Include="Assets\Property Tycoon\Assets\Scripts\camera.cs" />
      <Compile Include="Assets\Property Tycoon\Assets\Scripts\Dice.cs" />
@@ -101,6 +107,7 @@
      <Compile Include="Assets\Property Tycoon\Assets\Scripts\Trigger Event Scripts For Player\TriggerEvents\TriggerEventWolowitzStreet19.cs" />
      <Compile Include="Assets\Property Tycoon\Assets\Scripts\Trigger Event Scripts For Player\TriggerEvents\TriggerEventWookieHole14.cs" />
      <Compile Include="Assets\Property Tycoon\Assets\Scripts\Trigger Event Scripts For Player\TriggerEvents\TriggerEventYueFeiSquare22.cs" />
+     <Compile Include="Assets\Property Tycoon\Assets\Scripts\TurnManager.cs" />
      <Compile Include="Assets\Sci-Fi Drinks Pack FREE\DisplayFrameWork\Scripts\AspectRatioScreen.cs" />
      <Compile Include="Assets\Sci-Fi Drinks Pack FREE\DisplayFrameWork\Scripts\DisplayObjects.cs" />
      <Compile Include="Assets\Sci-Fi Drinks Pack FREE\DisplayFrameWork\Scripts\ItemInfo.cs" />

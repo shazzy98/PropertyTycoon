@@ -19,59 +19,98 @@ public class TriggerEventBrightonStation6 : MonoBehaviour
     int PropertyThree = 100;
     int PropertyFour = 200;
     int hotel = 0;
+    float timer = 0;
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
         if (other.CompareTag ("Player"))
         {
             Debug.Log("Player Moved to Brighton Station");
+            timer = timer + Time.deltaTime;
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player Moved to Brighton Station");
+            }
         }
         if (other.CompareTag ("Player2"))
         {
-            Debug.Log("Player2 Moved to Brighton Station");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player2 Moved to Brighton Station");
+            }
         }
         if (other.CompareTag ("Player3"))
         {
-            Debug.Log("Player3 Moved to ");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player2 Moved to Brighton Station");
+            }
         }
         if (other.CompareTag ("Player4"))
         {
-            Debug.Log("Player4 Moved to ");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player2 Moved to Brighton Station");
+            }
         }
         if (other.CompareTag ("Player5"))
         {
-            Debug.Log("Player5 Moved to ");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player2 Moved to Brighton Station");
+            }
         }
         if (other.CompareTag ("Player6"))
         {
-            Debug.Log("Player6 Moved to ");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player2 Moved to Brighton Station");
+            }
         }   
     }
     void OnTriggerExit(Collider other)
     {
         if (other.CompareTag ("Player"))
         {
-            Debug.Log("Exit Square");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Exit Square");
+            }
         }
         if (other.CompareTag ("Player2"))
         {
-            Debug.Log("Player2 Exit Square");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Exit Square");
+            }
         }
         if (other.CompareTag ("Player3"))
         {
-            Debug.Log("Player3 Exit Square");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Exit Square");
+            }
         }        
         if (other.CompareTag ("Player4"))
         {
-            Debug.Log("Player4 Exit Square");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Exit Square");
+            }
         }
         if (other.CompareTag ("Player5"))
         {
-            Debug.Log("Player5 Exit Square");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Exit Square");
+            }
         }
         if (other.CompareTag ("Player6"))
         {
-            Debug.Log("Player6 Exit Square");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Exit Square");
+            }
         }        
     }
 

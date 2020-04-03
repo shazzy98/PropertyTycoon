@@ -20,31 +20,51 @@ public class TriggerEventSkywalkerDrive12 : MonoBehaviour
     int PropertyFour = 625;
     int hotel = 750;
     
-    void OnTriggerEnter(Collider other)
+    float timer = 0;
+
+    void OnTriggerStay(Collider other)
     {
         if (other.CompareTag ("Player"))
         {
-            Debug.Log("Player Moved to ");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player Moved to Skywalker Drive");
+            }
         }
         if (other.CompareTag ("Player2"))
         {
-            Debug.Log("Player2 Moved to ");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player2 Moved to Skywalker Drive");
+            }
         }
         if (other.CompareTag ("Player3"))
         {
-            Debug.Log("Player3 Moved to ");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player3 Moved to Skywalker Drive");
+            }
         }
         if (other.CompareTag ("Player4"))
         {
-            Debug.Log("Player4 Moved to ");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player4 Moved to Skywalker Drive");
+            }
         }
         if (other.CompareTag ("Player5"))
         {
-            Debug.Log("Player5 Moved to ");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player5 Moved to Skywalker Drive");
+            }
         }
         if (other.CompareTag ("Player6"))
         {
-            Debug.Log("Player6 Moved to ");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player6 Moved to Skywalker Drive");
+            }
         }   
     }
     void OnTriggerExit(Collider other)

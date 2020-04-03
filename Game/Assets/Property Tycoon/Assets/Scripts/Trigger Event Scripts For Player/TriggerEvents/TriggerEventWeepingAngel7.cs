@@ -19,31 +19,51 @@ public class TriggerEventWeepingAngel7 : MonoBehaviour
     int PropertyFour = 400;
     int hotel = 550;
 
-    void OnTriggerEnter(Collider other)
+    float timer = 0;
+
+    void OnTriggerStay(Collider other)
     {
         if (other.CompareTag ("Player"))
         {
-            Debug.Log("Player Moved to ");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player Moved to Weeping Angel");
+            }
         }
         if (other.CompareTag ("Player2"))
         {
-            Debug.Log("Player2 Moved to ");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player2 Moved to Weeping Angel");
+            }
         }
         if (other.CompareTag ("Player3"))
         {
-            Debug.Log("Player3 Moved to ");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player3 Moved to Weeping Angel");
+            }
         }
         if (other.CompareTag ("Player4"))
         {
-            Debug.Log("Player4 Moved to ");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player4 Moved to Weeping Angel");
+            }
         }
         if (other.CompareTag ("Player5"))
         {
-            Debug.Log("Player5 Moved to ");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player5 Moved to Weeping Angel");
+            }
         }
         if (other.CompareTag ("Player6"))
         {
-            Debug.Log("Player6 Moved to ");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Player6 Moved to Weeping Angel");
+            }
         }   
     }
     void OnTriggerExit(Collider other)
