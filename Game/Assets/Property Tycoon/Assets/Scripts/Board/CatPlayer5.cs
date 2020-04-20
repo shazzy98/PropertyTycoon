@@ -52,6 +52,7 @@ public class CatPlayer5 : MonoBehaviour
         int spacesToMove = diceManager.totalValue;
         valueText.text = "Value: " + spacesToMove.ToString();
 
+
         if (spacesToMove == 0)
         {
             return;
