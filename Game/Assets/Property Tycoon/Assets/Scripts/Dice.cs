@@ -6,14 +6,14 @@ using UnityEngine.Events;
 public class Dice : MonoBehaviour 
 {
     [HideInInspector]
-    public bool isRolling;
     public float minRollForce;
     public float maxRollForce;
     public int value;
     Rigidbody rb;
     public UnityEvent RollEvent;
+    public bool Rolling;
 
-	void Awake () 
+    void Awake () 
     {
         rb = this.GetComponent<Rigidbody>();
 	}
@@ -21,16 +21,29 @@ public class Dice : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
-        if (isRolling == true)
+        if (Rolling == true)
         {
             if (rb.IsSleeping())
             {
-                isRolling = false;
+                Rolling = false;
                 calculateValue();
                 RollEvent.Invoke();
             }
         }
 	}
+
+
+
+    public void AddForceToDice()
+    {
+        if (!Rolling)
+        {
+            Rolling = true;
+            Vector3 RandomPosition = new Vector3(Random.Range(-0.2f, 0.2f), -1, Random.Range(-0.2f, 0.2f));
+            rb.AddExplosionForce(Random.Range(minRollForce, maxRollForce), RandomPosition, -0.5f, 2f);  
+        }
+    }
+
 
     void calculateValue()
     {
@@ -61,16 +74,10 @@ public class Dice : MonoBehaviour
         if (System.Math.Abs(forwardDot - -1) < 0.1f)
         {
             value = 5;
-        }   
-    }
-
-    public void AddForceToDice()
-    {
-        if (!isRolling)
-        {
-            isRolling = true;
-            Vector3 RandomPosition = new Vector3(Random.Range(-0.2f, 0.2f), -1, Random.Range(-0.2f, 0.2f));
-            rb.AddExplosionForce(Random.Range(minRollForce, maxRollForce), RandomPosition, -0.5f, 2f);  
         }
     }
+
+
+
+
 }

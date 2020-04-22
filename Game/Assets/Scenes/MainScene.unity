@@ -625,6 +625,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2906f07fa94ba9647a24c51cbce138a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  random: 0
+  Money: {fileID: 239269714}
+  bank: {fileID: 1402768094}
+  WarpExit: {fileID: 1319500575}
 --- !u!1 &112962926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1370,7 +1374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239269708}
   m_LocalRotation: {x: -0, y: -0.00329191, z: -0, w: 0.9999946}
-  m_LocalPosition: {x: 5.34, y: 0.066654, z: -0.73}
+  m_LocalPosition: {x: 5.34, y: 0.066654, z: -0.78}
   m_LocalScale: {x: 0.19165857, y: 0.32231665, z: 0.19165857}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7589,6 +7593,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307710455}
   m_CullTransparentMesh: 0
+--- !u!1 &1319500575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1290930711543042, guid: 5185e18f10f47420ab5dfcc2c0acfc76,
+    type: 3}
+  m_PrefabInstance: {fileID: 1685158490}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1328013394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8365,6 +8375,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1705a05bca49a69468125c5da883d784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  random: 0
+  Money: {fileID: 239269714}
+  bank: {fileID: 1402768094}
+  WarpExit: {fileID: 1319500575}
 --- !u!1001 &1528707699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9357,7 +9371,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1685158490}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1319500575}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1d2c98614ad94b03a8e001b1f946a21, type: 3}
@@ -9714,6 +9728,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 9378bad8b5769024a9f96dd910035478, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5185e18f10f47420ab5dfcc2c0acfc76, type: 3}
+--- !u!1 &1798161451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1290930711543042, guid: 5185e18f10f47420ab5dfcc2c0acfc76,
+    type: 3}
+  m_PrefabInstance: {fileID: 4766768}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1810442495
 GameObject:
   m_ObjectHideFlags: 0
@@ -9923,6 +9943,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f4e0dd80ab7d6f42bdc56631cebe432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  random: 0
+  Money: {fileID: 239269714}
+  bank: {fileID: 1402768094}
+  WarpExit: {fileID: 1798161451}
 --- !u!4 &1863579650 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4809964260332426, guid: 5185e18f10f47420ab5dfcc2c0acfc76,
