@@ -9,7 +9,7 @@ public class PlayerToken : MonoBehaviour
     Tile currentTile;
     Tile finalTile;
     Tile[] moveQueue;
-    int moveQueueIndex;
+    public static int moveQueueIndex;
     
     public DiceManager diceManager;
     public Text valueText;
@@ -46,10 +46,6 @@ public class PlayerToken : MonoBehaviour
         targetPosition = pos;
         velocity = Vector3.zero;
     }
-
-
-
-
 
     public void MovePlayerToken()
     {
