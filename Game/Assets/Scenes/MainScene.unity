@@ -1712,7 +1712,7 @@ GameObject:
   - component: {fileID: 269845286}
   - component: {fileID: 269845287}
   m_Layer: 5
-  m_Name: ShuffleDeck
+  m_Name: ShuffleDeckOK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1756,7 +1756,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 306cbd7c2c94fc546b9ec6d63a5e3af3, type: 3}
   - {fileID: 21300000, guid: 49658baee2c944b409101e9101259c80, type: 3}
   - {fileID: 21300000, guid: 9e7f41ff1895eee40982590b21bd2ba5, type: 3}
-  - {fileID: 21300000, guid: 3070735ffc3376d4dafd89cfdeee6049, type: 3}
   - {fileID: 21300000, guid: 7ae07f5844c6af74da2112377e8fae86, type: 3}
   - {fileID: 21300000, guid: 0982caf0dd8615849b05a871886fd04c, type: 3}
   - {fileID: 21300000, guid: 0a7ab21c91ba25446b8132d02d0559ca, type: 3}
@@ -7199,6 +7198,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dc058531fca359468ea2b1e0eafeac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1043618291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1043618292}
+  - component: {fileID: 1043618293}
+  m_Layer: 5
+  m_Name: ShuffleDeckPL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1043618292
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043618291}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 5.308172}
+  m_LocalScale: {x: 30.906456, y: 3.7389, z: 1.3525002}
+  m_Children: []
+  m_Father: {fileID: 2079877774}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 964.00006, y: 475.00006}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1043618293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043618291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c6a6a4f6fbafa4ba511729c14249e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardFaces:
+  - {fileID: 21300000, guid: 675d892ed9175534d8c0e036fa88e742, type: 3}
+  - {fileID: 21300000, guid: d92e096cf81df024f931a442cd7f92dd, type: 3}
+  - {fileID: 21300000, guid: e397f4d375978634daa081b35c8510dc, type: 3}
+  - {fileID: 21300000, guid: 43d71c53403c47340948a11011c7572c, type: 3}
+  - {fileID: 21300000, guid: 493a55be6fee0b244a7a2294d8e8ab53, type: 3}
+  - {fileID: 21300000, guid: ee583d1e04eb5494ab6ca5309ed72d4c, type: 3}
+  - {fileID: 21300000, guid: d50707e0b79fa5940bf7977c9fdefbed, type: 3}
+  - {fileID: 21300000, guid: cea1808f3d3f07c4aac4214efeef04c4, type: 3}
+  - {fileID: 21300000, guid: cf973be957c51da46a1c44a5c90708f4, type: 3}
+  - {fileID: 21300000, guid: d99206ed28c3fcc4f9625b120ae0707a, type: 3}
+  - {fileID: 21300000, guid: de70dcd4f08307940a6bfd60f46e286d, type: 3}
+  - {fileID: 21300000, guid: deb318076a73ae54a91e5759a5471960, type: 3}
+  - {fileID: 21300000, guid: 7452240d510384f4eb010401cb169d45, type: 3}
+  - {fileID: 21300000, guid: a6fac036a6127304badd14d0ca466910, type: 3}
+  - {fileID: 21300000, guid: e8f926c76e546764f82564d17f773b80, type: 3}
+  - {fileID: 21300000, guid: 25b3c921a34384f48924d7fe3c29c7a3, type: 3}
+  - {fileID: 21300000, guid: 0e0580bedf423cd4f9e153f0118973e8, type: 3}
+  cardPrefab: {fileID: 3260225450047197410, guid: 50eda72a6596f23459ccedeb07fbcb0d,
+    type: 3}
+  deckPL: []
 --- !u!1001 &1058791752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12245,6 +12313,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067054433}
   m_CullTransparentMesh: 0
+--- !u!1 &2079877772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2079877774}
+  - component: {fileID: 2079877773}
+  m_Layer: 0
+  m_Name: PotLuck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &2079877773
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079877772}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &2079877774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079877772}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0929565, y: -336, z: -5.3081713}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1043618292}
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2126905975 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114830736599110252, guid: 5185e18f10f47420ab5dfcc2c0acfc76,

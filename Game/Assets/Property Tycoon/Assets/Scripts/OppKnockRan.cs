@@ -60,6 +60,8 @@ public class OppKnockRan : MonoBehaviour
         {
             GameObject newCard = Instantiate(cardPrefab, new Vector3(transform.position.x, transform.position.y - yOffset, transform.position.z - zOffset), Quaternion.identity);
             newCard.name = card;
+            newCard.GetComponent<Selectable>().faceUp = false;
+            
 
             yOffset = yOffset + 5f;
             zOffset = zOffset + 0.03f;
