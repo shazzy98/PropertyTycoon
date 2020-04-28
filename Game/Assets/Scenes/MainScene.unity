@@ -2808,6 +2808,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c454334fb7755e246ad8a430a5de6c36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  random: 0
+  Money: {fileID: 239269714}
+  bank: {fileID: 1402768094}
+  WarpExit: {fileID: 1319500575}
 --- !u!1001 &530684391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4225,6 +4229,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7093c01f631cc4d8703a9a65a102aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  random: 0
+  Money: {fileID: 239269714}
+  bank: {fileID: 1402768094}
+  WarpExit: {fileID: 1319500575}
 --- !u!1001 &692727963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5083,6 +5091,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab5a3fb5ab21f8144b47ed37dc284e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  random: 0
+  Money: {fileID: 239269714}
+  bank: {fileID: 1402768094}
+  WarpExit: {fileID: 1319500575}
 --- !u!1001 &849837253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5490,7 +5502,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8a06cd2329474332ab9eefb91942883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isRolling: 0
   minRollForce: 50
   maxRollForce: 60
   value: 0
@@ -5508,6 +5519,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  Rolling: 0
 --- !u!114 &908876341 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114830736599110252, guid: 5185e18f10f47420ab5dfcc2c0acfc76,
@@ -9447,7 +9459,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8a06cd2329474332ab9eefb91942883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isRolling: 0
   minRollForce: 50
   maxRollForce: 60
   value: 0
@@ -9465,6 +9476,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  Rolling: 0
 --- !u!65 &1738435752
 BoxCollider:
   m_ObjectHideFlags: 0
