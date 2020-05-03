@@ -7,77 +7,62 @@ using UnityEngine.Events;
 public class TriggerEventOpportunityKnocks23 : MonoBehaviour
 {
     float timer = 0;
+    public int random;
+    public money Money;
+    public Bank bank;
+    public GameObject WarpExit;
 
-    void OnTriggerStay(Collider other)
+    private void Start()
     {
-        if (other.CompareTag ("Player"))
+        random = Random.Range(1, 4);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
         {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player Moved to Opportunity Knocks 2");
-            }
+
+            Debug.Log("Player moved to Pot Luck 3");
         }
-        if (other.CompareTag ("Player2"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player2 Moved to Opportunity Knocks 2");
-            }
-        }
-        if (other.CompareTag ("Player3"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player3 Moved to Opportunity Knocks 2");
-            }
-        }
-        if (other.CompareTag ("Player4"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player4 Moved to Opportunity Knocks 2");
-            }
-        }
-        if (other.CompareTag ("Player5"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player5 Moved to Opportunity Knocks 2");
-            }
-        }
-        if (other.CompareTag ("Player6"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player6 Moved to Opportunity Knocks 2");
-            }
-        }   
     }
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag ("Player"))
+        if (other.CompareTag("Player"))
         {
             Debug.Log("Exit Square");
         }
-        if (other.CompareTag ("Player2"))
+    }
+    void OnTriggerStay(Collider other)
+    {
+        timer = timer + Time.deltaTime;
+        if ((timer > 1) && timer < 1.1)
         {
-            Debug.Log("Player2 Exit Square");
+            if (random == 1)
+            {
+                Debug.Log("The Bank has made an accounting mistake, Recive $100");
+                Money.GetComponent<money>().addMoney(20);
+                bank.GetComponent<Bank>().subtractBank(20);
+            }
+
+            if (random == 2)
+            {
+                Debug.Log("Advance to GO");
+                transform.position = WarpExit.transform.position;
+            }
+
+            if (random == 3)
+            {
+                Debug.Log("Hospital Fees, pay $50");
+                Money.GetComponent<money>().subtractMoney(10);
+            }
+
+            if (random == 4)
+            {
+                Debug.Log("4");
+            }
+
+            Debug.Log("Player is at Opportunity Knocks 23");
         }
-        if (other.CompareTag ("Player3"))
-        {
-            Debug.Log("Player3 Exit Square");
-        }        
-        if (other.CompareTag ("Player4"))
-        {
-            Debug.Log("Player4 Exit Square");
-        }
-        if (other.CompareTag ("Player5"))
-        {
-            Debug.Log("Player5 Exit Square");
-        }
-        if (other.CompareTag ("Player6"))
-        {
-            Debug.Log("Player6 Exit Square");
-        }        
+
     }
 }

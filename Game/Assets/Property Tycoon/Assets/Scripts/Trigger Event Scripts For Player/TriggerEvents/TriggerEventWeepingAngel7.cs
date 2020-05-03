@@ -1,4 +1,3 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,64 +6,12 @@ using UnityEngine.Events;
 
 public class TriggerEventWeepingAngel7 : MonoBehaviour
 {
-    string Group = "Blue";
-    string Action = "";
-    string canBeBought = "Yes";
-    string OwnedBy = "";
-    int Cost = 100;
-    int unimprovedRent = 6;
-    int PropertyOne = 30;
-    int PropertyTwo = 90;
-    int PropertyThree = 270;
-    int PropertyFour = 400;
-    int hotel = 550;
-
-    float timer = 0;
-
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag ("Player"))
         {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player Moved to Weeping Angel");
-            }
+            Debug.Log("Player moved to Weeping Angel");
         }
-        if (other.CompareTag ("Player2"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player2 Moved to Weeping Angel");
-            }
-        }
-        if (other.CompareTag ("Player3"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player3 Moved to Weeping Angel");
-            }
-        }
-        if (other.CompareTag ("Player4"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player4 Moved to Weeping Angel");
-            }
-        }
-        if (other.CompareTag ("Player5"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player5 Moved to Weeping Angel");
-            }
-        }
-        if (other.CompareTag ("Player6"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player6 Moved to Weeping Angel");
-            }
-        }   
     }
     void OnTriggerExit(Collider other)
     {
@@ -72,25 +19,10 @@ public class TriggerEventWeepingAngel7 : MonoBehaviour
         {
             Debug.Log("Exit Square");
         }
-        if (other.CompareTag ("Player2"))
-        {
-            Debug.Log("Player2 Exit Square");
-        }
-        if (other.CompareTag ("Player3"))
-        {
-            Debug.Log("Player3 Exit Square");
-        }        
-        if (other.CompareTag ("Player4"))
-        {
-            Debug.Log("Player4 Exit Square");
-        }
-        if (other.CompareTag ("Player5"))
-        {
-            Debug.Log("Player5 Exit Square");
-        }
-        if (other.CompareTag ("Player6"))
-        {
-            Debug.Log("Player6 Exit Square");
-        }        
     }
+    void OnTriggerStay(Collider other)
+    {
+        Debug.Log("Player is at Weeping Angel");
+    }
+
 }

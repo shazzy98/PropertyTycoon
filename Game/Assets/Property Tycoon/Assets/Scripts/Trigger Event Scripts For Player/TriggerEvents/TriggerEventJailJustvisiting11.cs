@@ -1,5 +1,3 @@
-
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,52 +6,12 @@ using UnityEngine.Events;
 
 public class TriggerEventJailJustvisiting11 : MonoBehaviour
 {
-    float timer = 0;
-
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag ("Player"))
         {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player Moved to Jail / Just visiting");
-            }
+            Debug.Log("Player moved to Jail Just Visiting");
         }
-        if (other.CompareTag ("Player2"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player2 Moved to Jail / Just visiting");
-            }
-        }
-        if (other.CompareTag ("Player3"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player3 Moved to Jail / Just visiting");
-            }
-        }
-        if (other.CompareTag ("Player4"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player4 Moved to Jail / Just visiting");
-            }
-        }
-        if (other.CompareTag ("Player5"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player5 Moved to Jail / Just visiting");
-            }
-        }
-        if (other.CompareTag ("Player6"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player6 Moved to Jail / Just visiting");
-            }
-        }   
     }
     void OnTriggerExit(Collider other)
     {
@@ -61,25 +19,10 @@ public class TriggerEventJailJustvisiting11 : MonoBehaviour
         {
             Debug.Log("Exit Square");
         }
-        if (other.CompareTag ("Player2"))
-        {
-            Debug.Log("Player2 Exit Square");
-        }
-        if (other.CompareTag ("Player3"))
-        {
-            Debug.Log("Player3 Exit Square");
-        }        
-        if (other.CompareTag ("Player4"))
-        {
-            Debug.Log("Player4 Exit Square");
-        }
-        if (other.CompareTag ("Player5"))
-        {
-            Debug.Log("Player5 Exit Square");
-        }
-        if (other.CompareTag ("Player6"))
-        {
-            Debug.Log("Player6 Exit Square");
-        }        
     }
+    void OnTriggerStay(Collider other)
+    {
+        Debug.Log("Player is at Jail Just Visiting");
+    }
+
 }

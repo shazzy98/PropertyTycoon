@@ -9,11 +9,25 @@ public class DiceManager : MonoBehaviour
     public int totalValue;
     public UnityEvent EndRollEvent;
 
+
+    public void RollAllDie()
+    {
+        totalValue = 0;
+
+        for (int i = 0; i < diceList.Count; i++)
+        {
+            diceList[i].AddForceToDice();
+        }
+    }
+
+
+
+
     public void CountAllDieValues()
     {
         for (int i = 0; i < diceList.Count; i++)
         {
-            if(diceList[i].isRolling == true)
+            if(diceList[i].Rolling == true)
             {
                 totalValue = 0;
                 return;
@@ -26,15 +40,7 @@ public class DiceManager : MonoBehaviour
         EndRollEvent.Invoke();
     }
 
-    public void RollAllDie()
-    {
-        totalValue = 0;
-
-        for (int i = 0; i < diceList.Count; i++)
-        {
-            diceList[i].AddForceToDice();
-        }
-    }
+  
 
 
 

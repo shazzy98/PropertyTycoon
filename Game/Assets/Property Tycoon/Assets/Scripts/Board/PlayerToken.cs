@@ -9,14 +9,17 @@ public class PlayerToken : MonoBehaviour
     Tile currentTile;
     Tile finalTile;
     Tile[] moveQueue;
-    public static int moveQueueIndex;
+    int moveQueueIndex;
     
     public DiceManager diceManager;
     public Text valueText;
 
     Vector3 targetPosition;
     Vector3 velocity;
-	
+  
+
+  
+
     void Awake()
     {
         finalTile = startingTile;
@@ -46,6 +49,10 @@ public class PlayerToken : MonoBehaviour
         targetPosition = pos;
         velocity = Vector3.zero;
     }
+
+
+
+
 
     public void MovePlayerToken()
     {

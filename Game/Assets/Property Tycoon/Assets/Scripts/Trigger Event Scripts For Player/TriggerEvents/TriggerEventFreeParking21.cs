@@ -1,5 +1,3 @@
-
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,52 +6,12 @@ using UnityEngine.Events;
 
 public class TriggerEventFreeParking21 : MonoBehaviour
 {
-    float timer = 0;
-
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag ("Player"))
         {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player Moved to Free Parking");
-            }
+            Debug.Log("Player moved to Free Parking");
         }
-        if (other.CompareTag ("Player2"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player2 Moved to Free Parking");
-            }
-        }
-        if (other.CompareTag ("Player3"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player3 Moved to Free Parking");
-            }
-        }
-        if (other.CompareTag ("Player4"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player4 Moved to Free Parking");
-            }
-        }
-        if (other.CompareTag ("Player5"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player5 Moved to Free Parking");
-            }
-        }
-        if (other.CompareTag ("Player6"))
-        {
-            if ((timer > 1) && timer <1.1)
-            {
-                Debug.Log("Player6 Moved to Free Parking");
-            }
-        }   
     }
     void OnTriggerExit(Collider other)
     {
@@ -61,25 +19,10 @@ public class TriggerEventFreeParking21 : MonoBehaviour
         {
             Debug.Log("Exit Square");
         }
-        if (other.CompareTag ("Player2"))
-        {
-            Debug.Log("Player2 Exit Square");
-        }
-        if (other.CompareTag ("Player3"))
-        {
-            Debug.Log("Player3 Exit Square");
-        }        
-        if (other.CompareTag ("Player4"))
-        {
-            Debug.Log("Player4 Exit Square");
-        }
-        if (other.CompareTag ("Player5"))
-        {
-            Debug.Log("Player5 Exit Square");
-        }
-        if (other.CompareTag ("Player6"))
-        {
-            Debug.Log("Player6 Exit Square");
-        }        
     }
+    void OnTriggerStay(Collider other)
+    {
+        Debug.Log("Player is at Free Parking");
+    }
+
 }

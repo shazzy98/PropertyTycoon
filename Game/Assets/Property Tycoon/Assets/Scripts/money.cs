@@ -11,7 +11,7 @@ public class money : MonoBehaviour
     float timer = 0;
     public GameObject WarpExit;
     public bool stay = false;
-
+    
   
     
     
@@ -20,7 +20,7 @@ public class money : MonoBehaviour
     void Start()
     {
   
-        balance = 1500;
+        balance = 1300;
         balanceText.text = balance.ToString();
         
     }
@@ -48,49 +48,6 @@ public class money : MonoBehaviour
     }
 
 
-     void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Pick Up"))
-        {
-            
-            addMoney(200);
-            
-        }
-
-    }
-
-
-
-    void OnTriggerStay(Collider other)
-    {
-       
-        if (other.gameObject.CompareTag("tax"))
-        {
-            timer = timer + Time.deltaTime;
-            if ((timer > 1) && timer <1.1)
-            {
-                stay = true;
-                tax();
-                
-            }
-
-           
-        }
-
-        if (other.gameObject.CompareTag("jail"))
-        {
-            timer = timer + Time.deltaTime;
-            if (timer > 1) 
-            { 
-            Debug.Log("Going to Jail");
-            transform.position = WarpExit.transform.position;
-            }
-        }
-
-
-    }
-
-
 
     void tax()
     {
@@ -102,9 +59,18 @@ public class money : MonoBehaviour
         }
     }
 
-
-
+    public void goToJail()
+    {
+        Debug.Log("Going to Jail");
+        transform.position = WarpExit.transform.position;
     }
+}
+
+
+
+
+
+    
 
 
 
