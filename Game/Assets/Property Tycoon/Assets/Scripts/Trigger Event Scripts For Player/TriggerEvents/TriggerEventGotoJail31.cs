@@ -26,7 +26,7 @@ public class TriggerEventGotoJail31 : MonoBehaviour
     void OnTriggerStay(Collider other)
     {
         Debug.Log("Player is at Go to Jail");
-        Money.GetComponent<money>().goToJail();
+        //Money.GetComponent<money>().goToJail();
     }
 
 }
