@@ -8,20 +8,24 @@ public class UpdateSprite : MonoBehaviour
     public Sprite cardBack;
     private SpriteRenderer spriteRenderer;
     private Selectable selectable;
-    private OppKnockRan OppKnockRan;
+    private OppKnockRan oppKnockRan;
 
     // Start is called before the first frame update
     void Start()
     {
         List<string> deck = OppKnockRan.GenerateDeck();
-        OppKnockRan = FindObjectOfType<OppKnockRan>();
+        oppKnockRan = FindObjectOfType<OppKnockRan>();
 
         int i = 0;
         foreach (string card in deck)
         {
             if (this.name == card)
             {
-                cardFace = OppKnockRan.cardFaces[i];
+                cardFace = oppKnockRan.cardFaces[i];
+                break;
+            }
+            if (i == 15)
+            {
                 break;
             }
             i++;
@@ -34,13 +38,19 @@ public class UpdateSprite : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if(selectable.faceUp == true)
         {
             spriteRenderer.sprite = cardFace;
+            Debug.Log(cardFace);
         }
         else
         {
             spriteRenderer.sprite = cardBack;
         }
+        
+        
+        
+        
     }
 }

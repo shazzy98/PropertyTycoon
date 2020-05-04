@@ -118,6 +118,7 @@
      <Compile Include="Assets\Property Tycoon\Assets\Scripts\TurnManager.cs" />
      <Compile Include="Assets\Property Tycoon\Assets\Scripts\UpdateSprite.cs" />
      <Compile Include="Assets\Property Tycoon\Assets\Scripts\UpdateSpritePL.cs" />
+     <Compile Include="Assets\UserInput.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

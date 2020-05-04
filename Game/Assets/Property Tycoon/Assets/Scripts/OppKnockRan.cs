@@ -6,14 +6,25 @@ public class OppKnockRan : MonoBehaviour
 {
     public Sprite[] cardFaces;
     public GameObject cardPrefab;
-    public static string[] values = new string[] {"OK1", "OK2", "OK3", "OK4", "OK5", "OK6", "OK7", "OK8", "OK9", "OK10", "OK11", "OK12", "OK13", "OK14", "OK15", "OK16" };
+    public GameObject[] bottomPos;
+    public GameObject[] topPos;
+    public static string[] values = new string[] {"OK1", "OK2", "OK3", "OK4", "OK5", "OK6", "OK7", "OK8", "OK9", "OK10", "OK11", "OK12", "OK13", "OK14", "OK15"};
     public List<string> deck;
+
+    public List<string>[] bottom;
+    public List<string>[] tops;
+
+    private List<string> bottom0 = new List<string>();
 
     void Start()
     {
         // Start is called before the first frame update
+        //bottom = new List<string>[]  {bottom0};
+
         PlayCards();
         Deal();
+        PickUpOKCard();
+
     }
 
     public static List<string> GenerateDeck() 
@@ -31,11 +42,92 @@ public class OppKnockRan : MonoBehaviour
     {
         deck = GenerateDeck();
         Shuffle(deck);
-        foreach (string card in deck)
+
+    }
+
+    public void PickUpOKCard()
+    {
+        Debug.Log(deck.Count);
+        int deckLength = deck.Count;
+        //This is the last card dealt, it will be added to the back of the deck
+        string card = deck[0];
+        //string card = "OK1";
+        switch(card)
         {
-            print(card);
+            case "OK1":
+                Debug.Log("OK1");
+                GameObject.Find ("OK1").GetComponent<Selectable>().faceUp = true;
+                break;           
+            case "OK2":
+                Debug.Log("OK2");
+                GameObject.Find ("OK2").GetComponent<Selectable>().faceUp = true;
+                break;          
+            case "OK3":
+                Debug.Log("OK3");
+                GameObject.Find ("OK3").GetComponent<Selectable>().faceUp = true;
+                break;           
+            case "OK4":
+                Debug.Log("OK4");
+                GameObject.Find ("OK4").GetComponent<Selectable>().faceUp = true;
+                break;           
+            case "OK5":
+                Debug.Log("OK5");
+                GameObject.Find ("OK5").GetComponent<Selectable>().faceUp = true;
+                break;           
+            case "OK6":
+                Debug.Log("OK6");
+                GameObject.Find ("OK6").GetComponent<Selectable>().faceUp = true; 
+                break;          
+            case "OK7":
+                Debug.Log("OK7");
+                GameObject.Find ("OK7").GetComponent<Selectable>().faceUp = true; 
+                break;          
+            case "OK8":
+                Debug.Log("OK8"); 
+                GameObject.Find ("OK8").GetComponent<Selectable>().faceUp = true; 
+                break;         
+            case "OK9":
+                Debug.Log("OK9"); 
+                GameObject.Find ("OK9").GetComponent<Selectable>().faceUp = true;   
+                break;       
+            case "OK10":
+                Debug.Log("OK10");  
+                GameObject.Find ("OK10").GetComponent<Selectable>().faceUp = true;
+                break;         
+            case "OK11":
+                Debug.Log("OK11");  
+                GameObject.Find ("OK11").GetComponent<Selectable>().faceUp = true;
+                break;         
+            case "OK12":
+                Debug.Log("OK12"); 
+                GameObject.Find ("OK12").GetComponent<Selectable>().faceUp = true;
+                break;          
+            case "OK13":
+                Debug.Log("OK13");  
+                GameObject.Find ("OK13").GetComponent<Selectable>().faceUp = true; 
+                break;        
+            case "OK14":
+                Debug.Log("OK14"); 
+                GameObject.Find ("OK14").GetComponent<Selectable>().faceUp = true;
+                break;          
+            case "OK15":
+                Debug.Log("OK15");
+                GameObject.Find ("OK15").GetComponent<Selectable>().faceUp = true;
+                break;           
+            case "OK16":
+                Debug.Log("OK16");
+                GameObject.Find ("OK16").GetComponent<Selectable>().faceUp = true;
+                break;
         }
-        //Deal();
+        deck.RemoveAt(0);
+        Debug.Log(deck.Count);
+        deck.Add(card);
+        Debug.Log(deck.Count);
+        foreach (string cardy in deck)
+        {
+            print(cardy);
+        }
+        Deal();
     }
 
     void Shuffle<T>(List<T> list)
@@ -73,6 +165,6 @@ public class OppKnockRan : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

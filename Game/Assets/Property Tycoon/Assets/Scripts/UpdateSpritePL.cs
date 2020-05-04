@@ -34,7 +34,7 @@ public class UpdateSpritePL : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(selectable.faceUp == true)
+        if (selectable.faceUp == true)
         {
             spriteRenderer.sprite = cardFace;
         }
