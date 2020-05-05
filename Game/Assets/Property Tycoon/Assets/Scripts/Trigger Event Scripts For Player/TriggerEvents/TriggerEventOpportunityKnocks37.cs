@@ -15,6 +15,7 @@ public class TriggerEventOpportunityKnocks37 : MonoBehaviour
             if ((timer > 1) && timer <1.1)
             {
                 Debug.Log("Player Moved to Opportunity Knocks");
+                GameObject.Find ("OpportunityKnocks").GetComponent<OppKnockRan>().PickUpOKCard();
             }
         }
         if (other.CompareTag ("Player2"))
@@ -22,6 +23,7 @@ public class TriggerEventOpportunityKnocks37 : MonoBehaviour
             if ((timer > 1) && timer <1.1)
             {
                 Debug.Log("Player2 Moved to Opportunity Knocks");
+                GameObject.Find ("OpportunityKnocks").GetComponent<OppKnockRan>().PickUpOKCard();
             }
         }
         if (other.CompareTag ("Player3"))
@@ -29,6 +31,7 @@ public class TriggerEventOpportunityKnocks37 : MonoBehaviour
             if ((timer > 1) && timer <1.1)
             {
                 Debug.Log("Player3 Moved to Opportunity Knocks");
+                GameObject.Find ("OpportunityKnocks").GetComponent<OppKnockRan>().PickUpOKCard();
             }
         }
         if (other.CompareTag ("Player4"))
@@ -36,6 +39,7 @@ public class TriggerEventOpportunityKnocks37 : MonoBehaviour
             if ((timer > 1) && timer <1.1)
             {
                 Debug.Log("Player4 Moved to Opportunity Knocks");
+                GameObject.Find ("OpportunityKnocks").GetComponent<OppKnockRan>().PickUpOKCard();
             }
         }
         if (other.CompareTag ("Player5"))
@@ -43,6 +47,7 @@ public class TriggerEventOpportunityKnocks37 : MonoBehaviour
             if ((timer > 1) && timer <1.1)
             {
                 Debug.Log("Player5 Moved to Opportunity Knocks");
+                GameObject.Find ("OpportunityKnocks").GetComponent<OppKnockRan>().PickUpOKCard();
             }
         }
         if (other.CompareTag ("Player6"))
@@ -50,6 +55,7 @@ public class TriggerEventOpportunityKnocks37 : MonoBehaviour
             if ((timer > 1) && timer <1.1)
             {
                 Debug.Log("Player6 Moved to Opportunity Knocks");
+                GameObject.Find ("OpportunityKnocks").GetComponent<OppKnockRan>().PickUpOKCard();
             }
         }   
     }

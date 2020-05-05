@@ -42,7 +42,7 @@ public class UpdateSprite : MonoBehaviour
         if(selectable.faceUp == true)
         {
             spriteRenderer.sprite = cardFace;
-            Debug.Log(cardFace);
+            //Debug.Log(cardFace);
         }
         else
         {
