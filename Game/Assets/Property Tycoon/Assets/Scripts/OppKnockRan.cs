@@ -23,7 +23,7 @@ public class OppKnockRan : MonoBehaviour
 
         PlayCards();
         Deal();
-        //PickUpOKCard();
+        PickUpOKCard();
 
     }
 
@@ -52,59 +52,15 @@ public class OppKnockRan : MonoBehaviour
         //This is the last card dealt, it will be added to the back of the deck
         string card = deck[0];
         //string card = "OK1";
-        //playerTurn = GameObject.Find ("").GetComponent.<>().playerTurn 
-        string playerTurn = "1";
         switch(card)
         {
             case "OK1":
                 Debug.Log("OK1");
                 GameObject.Find ("OK1").GetComponent<Selectable>().faceUp = true;
-                switch(playerTurn)
-                {
-                    case "1":
-                        GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().subtractMoney(15);
-                        break;
-                    case "2":
-                        GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().subtractMoney(15);
-                        break;
-                    case "3":
-                        GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().subtractMoney(15);
-                        break;
-                    case "4":
-                        GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().subtractMoney(15);
-                        break;
-                    case "5":
-                        GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().subtractMoney(15);
-                        break;
-                    case "6":
-                        GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().subtractMoney(15);
-                        break;
-                }
                 break;           
             case "OK2":
                 Debug.Log("OK2");
                 GameObject.Find ("OK2").GetComponent<Selectable>().faceUp = true;
-                switch(playerTurn)
-                {
-                    case "1":
-                        GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().addMoney(150);
-                        break;
-                    case "2":
-                        GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().addMoney(150);
-                        break;
-                    case "3":
-                        GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().addMoney(150);
-                        break;
-                    case "4":
-                        GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().addMoney(150);
-                        break;
-                    case "5":
-                        GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().addMoney(150);
-                        break;
-                    case "6":
-                        GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().addMoney(150);
-                        break;
-                }
                 break;          
             case "OK3":
                 Debug.Log("OK3");
@@ -113,27 +69,6 @@ public class OppKnockRan : MonoBehaviour
             case "OK4":
                 Debug.Log("OK4");
                 GameObject.Find ("OK4").GetComponent<Selectable>().faceUp = true;
-                switch(playerTurn)
-                {
-                    case "1":
-                        GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().subtractMoney(150);
-                        break;
-                    case "2":
-                        GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().subtractMoney(150);
-                        break;
-                    case "3":
-                        GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().subtractMoney(150);
-                        break;
-                    case "4":
-                        GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().subtractMoney(150);
-                        break;
-                    case "5":
-                        GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().subtractMoney(150);
-                        break;
-                    case "6":
-                        GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().subtractMoney(150);
-                        break;
-                }
                 break;           
             case "OK5":
                 Debug.Log("OK5");
@@ -142,27 +77,6 @@ public class OppKnockRan : MonoBehaviour
             case "OK6":
                 Debug.Log("OK6");
                 GameObject.Find ("OK6").GetComponent<Selectable>().faceUp = true; 
-                switch(playerTurn)
-                {
-                    case "1":
-                        GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().addMoney(50);
-                        break;
-                    case "2":
-                        GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().addMoney(50);
-                        break;
-                    case "3":
-                        GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().addMoney(50);
-                        break;
-                    case "4":
-                        GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().addMoney(50);
-                        break;
-                    case "5":
-                        GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().addMoney(50);
-                        break;
-                    case "6":
-                        GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().addMoney(50);
-                        break;
-                }
                 break;          
             case "OK7":
                 Debug.Log("OK7");
@@ -179,57 +93,10 @@ public class OppKnockRan : MonoBehaviour
             case "OK10":
                 Debug.Log("OK10");  
                 GameObject.Find ("OK10").GetComponent<Selectable>().faceUp = true;
-                //repairsCost = numOfHouses*40
-                //if hotel
-                //  repairsCost = 115
-                /*
-                switch(playerTurn)
-                {
-                    case "1":
-                        GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().subtractMoney(repairsCost);
-                        break;
-                    case "2":
-                        GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().subtractMoney(repairsCost);
-                        break;
-                    case "3":
-                        GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().subtractMoney(repairsCost);
-                        break;
-                    case "4":
-                        GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().subtractMoney(repairsCost);
-                        break;
-                    case "5":
-                        GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().subtractMoney(repairsCost);
-                        break;
-                    case "6":
-                        GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().subtractMoney(repairsCost);
-                        break;
-                }
-                */
                 break;         
             case "OK11":
                 Debug.Log("OK11");  
                 GameObject.Find ("OK11").GetComponent<Selectable>().faceUp = true;
-                switch(playerTurn)
-                {
-                    case "1":
-                        GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().subtractMoney(20);
-                        break;
-                    case "2":
-                        GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().subtractMoney(20);
-                        break;
-                    case "3":
-                        GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().subtractMoney(20);
-                        break;
-                    case "4":
-                        GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().subtractMoney(20);
-                        break;
-                    case "5":
-                        GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().subtractMoney(20);
-                        break;
-                    case "6":
-                        GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().subtractMoney(20);
-                        break;
-                }
                 break;         
             case "OK12":
                 Debug.Log("OK12"); 
@@ -242,59 +109,15 @@ public class OppKnockRan : MonoBehaviour
             case "OK14":
                 Debug.Log("OK14"); 
                 GameObject.Find ("OK14").GetComponent<Selectable>().faceUp = true;
-                //repairsCost = numOfHouses*25
-                //if hotel
-                //  repairsCost = 100
-                                /*
-                switch(playerTurn)
-                {
-                    case "1":
-                        GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().subtractMoney(repairsCost);
-                        break;
-                    case "2":
-                        GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().subtractMoney(repairsCost);
-                        break;
-                    case "3":
-                        GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().subtractMoney(repairsCost);
-                        break;
-                    case "4":
-                        GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().subtractMoney(repairsCost);
-                        break;
-                    case "5":
-                        GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().subtractMoney(repairsCost);
-                        break;
-                    case "6":
-                        GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().subtractMoney(repairsCost);
-                        break;
-                }
-                */
                 break;          
             case "OK15":
                 Debug.Log("OK15");
                 GameObject.Find ("OK15").GetComponent<Selectable>().faceUp = true;
-                //money.addMoney(50);
-                switch(playerTurn)
-                {
-                    case "1":
-                        GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().addMoney(100);
-                        break;
-                    case "2":
-                        GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().addMoney(100);
-                        break;
-                    case "3":
-                        GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().addMoney(100);
-                        break;
-                    case "4":
-                        GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().addMoney(100);
-                        break;
-                    case "5":
-                        GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().addMoney(100);
-                        break;
-                    case "6":
-                        GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().addMoney(100);
-                        break;
-                }
                 break;           
+            case "OK16":
+                Debug.Log("OK16");
+                GameObject.Find ("OK16").GetComponent<Selectable>().faceUp = true;
+                break;
         }
         deck.RemoveAt(0);
         Debug.Log(deck.Count);
@@ -304,6 +127,7 @@ public class OppKnockRan : MonoBehaviour
         {
             print(cardy);
         }
+        Deal();
     }
 
     void Shuffle<T>(List<T> list)

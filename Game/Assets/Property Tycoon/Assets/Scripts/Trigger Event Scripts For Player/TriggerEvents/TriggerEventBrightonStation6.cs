@@ -23,9 +23,10 @@ public class TriggerEventBrightonStation6 : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        timer = timer + Time.deltaTime;
         if (other.CompareTag ("Player"))
         {
+            Debug.Log("Player Moved to Brighton Station");
+            timer = timer + Time.deltaTime;
             if ((timer > 1) && timer <1.1)
             {
                 Debug.Log("Player Moved to Brighton Station");
@@ -69,30 +70,47 @@ public class TriggerEventBrightonStation6 : MonoBehaviour
     }
     void OnTriggerExit(Collider other)
     {
-        timer = 0;
         if (other.CompareTag ("Player"))
         {
-            Debug.Log("Exit Square");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Exit Square");
+            }
         }
         if (other.CompareTag ("Player2"))
         {
-            Debug.Log("Exit Square");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Exit Square");
+            }
         }
         if (other.CompareTag ("Player3"))
         {
-            Debug.Log("Exit Square");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Exit Square");
+            }
         }        
         if (other.CompareTag ("Player4"))
         {
-            Debug.Log("Exit Square");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Exit Square");
+            }
         }
         if (other.CompareTag ("Player5"))
         {
-            Debug.Log("Exit Square");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Exit Square");
+            }
         }
         if (other.CompareTag ("Player6"))
         {
-            Debug.Log("Exit Square");
+            if ((timer > 1) && timer <1.1)
+            {
+                Debug.Log("Exit Square");
+            }
         }        
     }
 

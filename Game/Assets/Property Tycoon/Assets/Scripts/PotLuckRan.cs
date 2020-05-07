@@ -126,6 +126,7 @@ public class PotLuckRan : MonoBehaviour
             print(cardy);
         }
         
+        Deal();
     }
 
     void Shuffle<T>(List<T> list)
