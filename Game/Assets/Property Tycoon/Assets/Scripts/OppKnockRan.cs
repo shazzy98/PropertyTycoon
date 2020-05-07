@@ -23,7 +23,7 @@ public class OppKnockRan : MonoBehaviour
 
         PlayCards();
         Deal();
-        PickUpOKCard();
+        //PickUpOKCard();
 
     }
 

@@ -14,7 +14,7 @@ public class PotLuckRan : MonoBehaviour
         // Start is called before the first frame update
         PlayCards();
         Deal();
-        PickUpPLCard();
+        //PickUpPLCard();
     }
 
     public static List<string> GenerateDeck() 
