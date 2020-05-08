@@ -13,9 +13,18 @@ public class TriggerEventPotLuck18 : MonoBehaviour
     {
         if (other.CompareTag ("Player"))
         {
-            if ((timer > 1) && timer <1.1)
+            timer = timer + Time.deltaTime;
+            int scriptCalled = 0;
+            if ((timer > 1) && timer < 1.1)
             {
-                Debug.Log("Player Moved to Pot Luck 2");
+                Debug.Log("Player Moved to Pot Luck");
+                scriptCalled += 1;
+                if (scriptCalled == 1)
+                {
+                    //collider.gameObject.GetComponent<OppKnockRan>().
+                    Debug.Log("script called PotLuckRan. method PickUpOkCard");
+                    GameObject.Find ("ShuffleDeckPL").GetComponent<PotLuckRan>().PickUpPLCard();
+                }
             }
         }
         if (other.CompareTag ("Player2"))

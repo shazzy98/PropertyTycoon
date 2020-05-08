@@ -25,7 +25,7 @@ public class TriggerEventBrightonStation6 : MonoBehaviour
     {
         if (other.CompareTag ("Player"))
         {
-            Debug.Log("Player Moved to Brighton Station");
+            //Debug.Log("Player Moved to Brighton Station");
             timer = timer + Time.deltaTime;
             if ((timer > 1) && timer <1.1)
             {

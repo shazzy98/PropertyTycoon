@@ -12,9 +12,18 @@ public class TriggerEventOpportunityKnocks37 : MonoBehaviour
     {
         if (other.CompareTag ("Player"))
         {
-            if ((timer > 1) && timer <1.1)
+            timer = timer + Time.deltaTime;
+            int scriptCalled = 0;
+            if ((timer > 1) && timer < 1.1)
             {
                 Debug.Log("Player Moved to Opportunity Knocks");
+                scriptCalled += 1;
+                if (scriptCalled == 1)
+                {
+                    //collider.gameObject.GetComponent<OppKnockRan>().
+                    Debug.Log("script called OppKnockRan. method PickUpOkCard");
+                    GameObject.Find ("ShuffleDeckOK").GetComponent<OppKnockRan>().PickUpOKCard();
+                }
             }
         }
         if (other.CompareTag ("Player2"))

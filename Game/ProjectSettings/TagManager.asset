@@ -15,6 +15,7 @@ TagManager:
   - Player4
   - Player5
   - Player6
+  - ShuffleDeckOK
   layers:
   - Default
   - TransparentFX
