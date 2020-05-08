@@ -29,7 +29,7 @@ public class TriggerEventFalmerStation26 : MonoBehaviour
             timer = timer + Time.deltaTime;
             if ((timer > 1) && timer <1.1)
             {
-                Debug.Log("Player Moved to Brighton Station");
+                Debug.Log("Player Moved to Falmer Station");
                 if (OwnedBy == null)
                 {
                     Debug.Log("would player like to buy property");//waiting on user interface
@@ -73,7 +73,7 @@ public class TriggerEventFalmerStation26 : MonoBehaviour
             timer = timer + Time.deltaTime;
             if ((timer > 1) && timer <1.1)
             {
-                Debug.Log("Player2 Moved to Brighton Station");
+                Debug.Log("Player2 Moved to Falmer Station");
                 if (OwnedBy == null)
                 {
                     Debug.Log("would player like to buy property");//waiting on user interface
@@ -117,7 +117,7 @@ public class TriggerEventFalmerStation26 : MonoBehaviour
             timer = timer + Time.deltaTime;
             if ((timer > 1) && timer <1.1)
             {
-                Debug.Log("Player3 Moved to Brighton Station");
+                Debug.Log("Player3 Moved to Falmer Station");
                 if (OwnedBy == null)
                 {
                     Debug.Log("would player like to buy property");//waiting on user interface
@@ -160,7 +160,7 @@ public class TriggerEventFalmerStation26 : MonoBehaviour
             timer = timer + Time.deltaTime;
             if ((timer > 1) && timer <1.1)
             {
-                Debug.Log("Player3 Moved to Brighton Station");
+                Debug.Log("Player3 Moved to Falmer Station");
                 if (OwnedBy == null)
                 {
                     Debug.Log("would player like to buy property");//waiting on user interface
@@ -204,7 +204,7 @@ public class TriggerEventFalmerStation26 : MonoBehaviour
             timer = timer + Time.deltaTime;
             if ((timer > 1) && timer <1.1)
             {
-                Debug.Log("Player3 Moved to Brighton Station");
+                Debug.Log("Player3 Moved to Falmer Station");
                 if (OwnedBy == null)
                 {
                     Debug.Log("would player like to buy property");//waiting on user interface
@@ -248,7 +248,7 @@ public class TriggerEventFalmerStation26 : MonoBehaviour
             timer = timer + Time.deltaTime;
             if ((timer > 1) && timer <1.1)
             {
-                Debug.Log("Player3 Moved to Brighton Station");
+                Debug.Log("Player3 Moved to Falmer Station");
                 if (OwnedBy == null)
                 {
                     Debug.Log("would player like to buy property");//waiting on user interface
