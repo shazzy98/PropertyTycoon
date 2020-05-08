@@ -14,59 +14,46 @@ public class TriggerEventGo1 : MonoBehaviour
     public Bank bank;
 
 
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             Money.GetComponent<money>().addMoney(200);
             bank.GetComponent<Bank>().subtractBank(200);
-
-            Debug.Log("Player moved to GO");
         }
 
         if (other.CompareTag("Player2"))
         {
             Money.GetComponent<money>().addMoney(200);
             bank.GetComponent<Bank>().subtractBank(200);
-
-            Debug.Log("Player moved to GO");
         }
 
         if (other.CompareTag("Player3"))
         {
             Money.GetComponent<money>().addMoney(200);
             bank.GetComponent<Bank>().subtractBank(200);
-
-            Debug.Log("Player moved to GO");
         }
 
         if (other.CompareTag("Player4"))
         {
             Money.GetComponent<money>().addMoney(200);
             bank.GetComponent<Bank>().subtractBank(200);
-
-            Debug.Log("Player moved to GO");
         }
 
         if (other.CompareTag("Player5"))
         {
             Money.GetComponent<money>().addMoney(200);
             bank.GetComponent<Bank>().subtractBank(200);
-
-            Debug.Log("Player moved to GO");
         }
 
         if (other.CompareTag("Player6"))
         {
             Money.GetComponent<money>().addMoney(200);
             bank.GetComponent<Bank>().subtractBank(200);
-
-            Debug.Log("Player moved to GO");
         }
 
     }
-
-
 
 
     void OnTriggerStay(Collider other)

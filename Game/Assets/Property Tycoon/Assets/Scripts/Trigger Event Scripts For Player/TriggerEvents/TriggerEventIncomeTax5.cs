@@ -9,13 +9,18 @@ using UnityEngine.Events;
 public class TriggerEventIncomeTax5 : MonoBehaviour
 {
     float timer = 0;
+    public money Money;
+    public Bank bank;
 
     void OnTriggerStay(Collider other)
     {
         if (other.CompareTag ("Player"))
         {
+            timer = timer + Time.deltaTime;
             if ((timer > 1) && timer <1.1)
             {
+                Money.GetComponent<money>().subtractMoney(40);
+                bank.GetComponent<Bank>().addBank(40);
                 Debug.Log("Player Moved to Income Tax");
             }
         }

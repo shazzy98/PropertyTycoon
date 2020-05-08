@@ -11,6 +11,7 @@ public class money : MonoBehaviour
     float timer = 0;
     public GameObject WarpExit;
     public bool stay = false;
+    public int StationsOwned = 0;
 
   
     
@@ -31,7 +32,14 @@ public class money : MonoBehaviour
         
 
     }
-
+    public void purchasedStation()
+    {
+        StationsOwned += 1;
+    }
+    public int StationsOwnedBy()
+    {
+        return StationsOwned;
+    }
 
     public void addMoney(int addedMoney)
     {
@@ -47,8 +55,12 @@ public class money : MonoBehaviour
 
     }
 
+    public void buyProperty()
+    {
 
-     void OnTriggerEnter(Collider other)
+    }
+
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Pick Up"))
         {

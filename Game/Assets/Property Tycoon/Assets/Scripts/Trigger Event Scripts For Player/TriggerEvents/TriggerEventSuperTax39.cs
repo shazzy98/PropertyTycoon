@@ -9,13 +9,18 @@ using UnityEngine.Events;
 public class TriggerEventSuperTax39 : MonoBehaviour
 {
     float timer = 0;
+    public money Money;
+    public Bank bank;
 
     void OnTriggerStay(Collider other)
     {
+        timer = timer + Time.deltaTime;
         if (other.CompareTag ("Player"))
         {
             if ((timer > 1) && timer <1.1)
             {
+                Money.GetComponent<money>().subtractMoney(20);
+                bank.GetComponent<Bank>().addBank(20);      
                 Debug.Log("Player Moved to Super Tax");
             }
         }
