@@ -323,6 +323,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fa727e4b9283a74d8dc0f6a06e9157d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Money: {fileID: 239269714}
+  bank: {fileID: 685401037}
 --- !u!1 &28739148
 GameObject:
   m_ObjectHideFlags: 0
@@ -4897,6 +4899,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd5d9c2553226984ab3b641d233a14b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &685401037 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8013585506696140594, guid: 264f252a2e856f243a66cb5012ccb882,
+    type: 3}
+  m_PrefabInstance: {fileID: 1254552087}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a356f116f14c21b4e9a31f02001ac540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &689738301

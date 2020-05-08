@@ -20,7 +20,7 @@ public class money : MonoBehaviour
     void Start()
     {
   
-        balance = 1500;
+        balance = 1300;
         balanceText.text = balance.ToString();
         
     }
