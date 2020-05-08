@@ -33,7 +33,7 @@ public class TriggerEventCrapperStrBrown2 : MonoBehaviour
             {
                 Debug.Log("Player Moved to Crapper Str Brown");
                 string Player = "Boot (Tag 'Player')";
-                if (((OwnedBy == "") || OwnedBy == "Player") && (CurrentlyOwned != "hotel"))
+                if (((OwnedBy == "") || OwnedBy == Player) && (CurrentlyOwned != "hotel"))
                 {
                     int balance = GameObject.Find (Player).GetComponent<money>().balance;
                     Debug.Log("would player like to buy property");//waiting on user interface
@@ -162,7 +162,7 @@ public class TriggerEventCrapperStrBrown2 : MonoBehaviour
             {
                 Debug.Log("Player Moved to Falmer Station");
                 string Player = "Smartphone (Tag 'Player2')";
-                if (((OwnedBy == "") || OwnedBy == "Player") && (CurrentlyOwned != "hotel"))
+                if (((OwnedBy == "") || OwnedBy == Player) && (CurrentlyOwned != "hotel"))
                 {
                     int balance = GameObject.Find (Player).GetComponent<money>().balance;
                     Debug.Log("would player like to buy property");//waiting on user interface
@@ -292,7 +292,7 @@ public class TriggerEventCrapperStrBrown2 : MonoBehaviour
             {
                 Debug.Log("Player Moved to Falmer Station");
                 string Player = "Smartphone (Tag 'Player2')";
-                if (((OwnedBy == "") || OwnedBy == "Player") && (CurrentlyOwned != "hotel"))
+                if (((OwnedBy == "") || OwnedBy == Player) && (CurrentlyOwned != "hotel"))
                 {
                     int balance = GameObject.Find (Player).GetComponent<money>().balance;
                     Debug.Log("would player like to buy property");//waiting on user interface
@@ -422,7 +422,7 @@ public class TriggerEventCrapperStrBrown2 : MonoBehaviour
             {
                 Debug.Log("Player Moved to Falmer Station");
                 string Player = "Hatstand (Tag 'Player4')";
-                if (((OwnedBy == "") || OwnedBy == "Player") && (CurrentlyOwned != "hotel"))
+                if (((OwnedBy == "") || OwnedBy == Player) && (CurrentlyOwned != "hotel"))
                 {
                     int balance = GameObject.Find (Player).GetComponent<money>().balance;
                     Debug.Log("would player like to buy property");//waiting on user interface
@@ -551,7 +551,7 @@ public class TriggerEventCrapperStrBrown2 : MonoBehaviour
             {
                 Debug.Log("Player Moved to Falmer Station");
                 string Player = "Cat (Tag 'Player5')";
-                if (((OwnedBy == "") || OwnedBy == "Player") && (CurrentlyOwned != "hotel"))
+                if (((OwnedBy == "") || OwnedBy == Player) && (CurrentlyOwned != "hotel"))
                 {
                     int balance = GameObject.Find (Player).GetComponent<money>().balance;
                     Debug.Log("would player like to buy property");//waiting on user interface
@@ -680,7 +680,7 @@ public class TriggerEventCrapperStrBrown2 : MonoBehaviour
             {
                 Debug.Log("Player Moved to Falmer Station");
                 string Player = "Spoon (Tag 'Player6')";
-                if (((OwnedBy == "") || OwnedBy == "Player") && (CurrentlyOwned != "hotel"))
+                if (((OwnedBy == "") || OwnedBy == Player) && (CurrentlyOwned != "hotel"))
                 {
                     int balance = GameObject.Find (Player).GetComponent<money>().balance;
                     Debug.Log("would player like to buy property");//waiting on user interface
