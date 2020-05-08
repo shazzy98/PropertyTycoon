@@ -72,6 +72,11 @@
      <Compile Include="Assets\Property Tycoon\Assets\Scripts\DiceManager.cs" />
      <Compile Include="Assets\Property Tycoon\Assets\Scripts\Menu\Menu.cs" />
      <Compile Include="Assets\Property Tycoon\Assets\Scripts\money.cs" />
+     <Compile Include="Assets\Property Tycoon\Assets\Scripts\money2.cs" />
+     <Compile Include="Assets\Property Tycoon\Assets\Scripts\money3.cs" />
+     <Compile Include="Assets\Property Tycoon\Assets\Scripts\money4.cs" />
+     <Compile Include="Assets\Property Tycoon\Assets\Scripts\money5.cs" />
+     <Compile Include="Assets\Property Tycoon\Assets\Scripts\money6.cs" />
      <Compile Include="Assets\Property Tycoon\Assets\Scripts\OppKnockRan.cs" />
      <Compile Include="Assets\Property Tycoon\Assets\Scripts\PotLuckRan.cs" />
      <Compile Include="Assets\Property Tycoon\Assets\Scripts\Selectable.cs" />

@@ -1391,6 +1391,7 @@ MonoBehaviour:
   balanceText: {fileID: 2067054435}
   WarpExit: {fileID: 821008178}
   stay: 0
+  StationsOwned: 0
 --- !u!54 &239269715
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2294,6 +2295,7 @@ GameObject:
   - component: {fileID: 386920921}
   - component: {fileID: 386920919}
   - component: {fileID: 386920918}
+  - component: {fileID: 386920920}
   - component: {fileID: 386920917}
   m_Layer: 0
   m_Name: Spoon (Tag 'Player6')
@@ -2334,6 +2336,7 @@ MonoBehaviour:
   balanceText: {fileID: 2067054435}
   WarpExit: {fileID: 821008178}
   stay: 0
+  StationsOwned: 0
 --- !u!114 &386920919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2349,6 +2352,23 @@ MonoBehaviour:
   startingTile: {fileID: 1685158493}
   diceManager: {fileID: 265668476}
   valueText: {fileID: 1656769633}
+--- !u!114 &386920920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386920916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1881737c51d9f244884ea6e2e4792ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balance: 0
+  balanceText: {fileID: 0}
+  WarpExit: {fileID: 0}
+  stay: 0
+  StationsOwned: 0
 --- !u!136 &386920921
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2708,6 +2728,7 @@ GameObject:
   - component: {fileID: 424783213}
   - component: {fileID: 424783211}
   - component: {fileID: 424783210}
+  - component: {fileID: 424783216}
   - component: {fileID: 424783209}
   - component: {fileID: 424783212}
   m_Layer: 0
@@ -2749,6 +2770,7 @@ MonoBehaviour:
   balanceText: {fileID: 2067054435}
   WarpExit: {fileID: 821008178}
   stay: 0
+  StationsOwned: 0
 --- !u!114 &424783211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2820,6 +2842,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: -0.377, z: 0}
+--- !u!114 &424783216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424783208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5118e894bbfb42149b5f22f57f1ce33e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balance: 0
+  balanceText: {fileID: 0}
+  WarpExit: {fileID: 0}
+  stay: 0
+  StationsOwned: 0
 --- !u!1001 &434389486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7912,6 +7951,7 @@ GameObject:
   - component: {fileID: 1194981268}
   - component: {fileID: 1194981266}
   - component: {fileID: 1194981265}
+  - component: {fileID: 1194981267}
   - component: {fileID: 1194981264}
   m_Layer: 0
   m_Name: Goblet (Tag 'Player3)
@@ -7952,6 +7992,7 @@ MonoBehaviour:
   balanceText: {fileID: 2067054435}
   WarpExit: {fileID: 821008178}
   stay: 0
+  StationsOwned: 0
 --- !u!114 &1194981266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7967,6 +8008,23 @@ MonoBehaviour:
   startingTile: {fileID: 1685158493}
   diceManager: {fileID: 265668476}
   valueText: {fileID: 1656769633}
+--- !u!114 &1194981267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194981263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa9b0760e5429941a6e2cafb201ef5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balance: 0
+  balanceText: {fileID: 0}
+  WarpExit: {fileID: 0}
+  stay: 0
+  StationsOwned: 0
 --- !u!136 &1194981268
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9594,6 +9652,7 @@ GameObject:
   - component: {fileID: 1539546429}
   - component: {fileID: 1539546427}
   - component: {fileID: 1539546426}
+  - component: {fileID: 1539546428}
   - component: {fileID: 1539546425}
   m_Layer: 0
   m_Name: Hatstand (Tag 'Player4')
@@ -9634,6 +9693,7 @@ MonoBehaviour:
   balanceText: {fileID: 2067054435}
   WarpExit: {fileID: 821008178}
   stay: 0
+  StationsOwned: 0
 --- !u!114 &1539546427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9649,6 +9709,23 @@ MonoBehaviour:
   startingTile: {fileID: 1685158493}
   diceManager: {fileID: 265668476}
   valueText: {fileID: 1656769633}
+--- !u!114 &1539546428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539546424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb77044d47024b9488e9b1041449facd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balance: 0
+  balanceText: {fileID: 0}
+  WarpExit: {fileID: 0}
+  stay: 0
+  StationsOwned: 0
 --- !u!136 &1539546429
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10181,6 +10258,7 @@ GameObject:
   - component: {fileID: 1631679264}
   - component: {fileID: 1631679262}
   - component: {fileID: 1631679261}
+  - component: {fileID: 1631679263}
   - component: {fileID: 1631679260}
   m_Layer: 0
   m_Name: Smartphone (Tag 'Player2')
@@ -10221,6 +10299,7 @@ MonoBehaviour:
   balanceText: {fileID: 2067054435}
   WarpExit: {fileID: 821008178}
   stay: 0
+  StationsOwned: 0
 --- !u!114 &1631679262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10236,6 +10315,23 @@ MonoBehaviour:
   startingTile: {fileID: 1685158493}
   diceManager: {fileID: 265668476}
   valueText: {fileID: 1656769633}
+--- !u!114 &1631679263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631679259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c84b10adb218d9d4385c8334a14655c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balance: 0
+  balanceText: {fileID: 0}
+  WarpExit: {fileID: 0}
+  stay: 0
+  StationsOwned: 0
 --- !u!136 &1631679264
 CapsuleCollider:
   m_ObjectHideFlags: 0
