@@ -299,7 +299,7 @@ public class TriggerEventCrapperStrBrown2 : MonoBehaviour
 
                     int yes = 1;
                     if (yes == 1)
-                    //Debug.Log("How many properties would you like to buy?"); // DISPLAY PRICES
+                    //Debug.Log("the price is x. buy property? yes/no"); // DISPLAY PRICES
                     {
                         switch(CurrentlyOwned)
                         {
