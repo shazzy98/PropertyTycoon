@@ -36,7 +36,7 @@ public class TriggerEventLewesStation36 : MonoBehaviour
                     int yes = 1;
                     if (yes == 1)
                     {
-                        GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().subtractmoney(200);
+                        GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().subtractMoney(200);
                         OwnedBy = "Boot (Tag 'Player')";
                         GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().purchasedStation();
                         int noOfStations = GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().StationsOwnedBy();
@@ -49,19 +49,19 @@ public class TriggerEventLewesStation36 : MonoBehaviour
                     switch (noOfStations)
                     {
                         case 0:
-                            GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().subtractmoney(0);
+                            GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().subtractMoney(0);
                             break;
                         case 1:
-                            GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().subtractmoney(25);
+                            GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().subtractMoney(25);
                             break;
                         case 2:
-                            GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().subtractmoney(50);
+                            GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().subtractMoney(50);
                             break;
                         case 3:
-                            GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().subtractmoney(100);
+                            GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().subtractMoney(100);
                             break;
                         case 4:
-                            GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().subtractmoney(200);
+                            GameObject.Find ("Boot (Tag 'Player')").GetComponent<money>().subtractMoney(200);
                             break;
 
                     }
@@ -80,7 +80,7 @@ public class TriggerEventLewesStation36 : MonoBehaviour
                     int yes = 1;
                     if (yes == 1)
                     {
-                        GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().subtractmoney(200);
+                        GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().subtractMoney(200);
                         OwnedBy = "Smartphone (Tag 'Player2')";
                         GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().purchasedStation();
                         int noOfStations = GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().StationsOwnedBy();
@@ -93,19 +93,19 @@ public class TriggerEventLewesStation36 : MonoBehaviour
                     switch (noOfStations)
                     {
                         case 0:
-                            GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().subtractmoney(0);
+                            GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().subtractMoney(0);
                             break;
                         case 1:
-                            GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().subtractmoney(25);
+                            GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().subtractMoney(25);
                             break;
                         case 2:
-                            GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().subtractmoney(50);
+                            GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().subtractMoney(50);
                             break;
                         case 3:
-                            GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().subtractmoney(100);
+                            GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().subtractMoney(100);
                             break;
                         case 4:
-                            GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().subtractmoney(200);
+                            GameObject.Find ("Smartphone (Tag 'Player2')").GetComponent<money>().subtractMoney(200);
                             break;
 
                     }
@@ -124,7 +124,7 @@ public class TriggerEventLewesStation36 : MonoBehaviour
                     int yes = 1;
                     if (yes == 1)
                     {
-                        GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().subtractmoney(200);
+                        GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().subtractMoney(200);
                         OwnedBy = "Goblet (Tag 'Player3)";
                         GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().purchasedStation();
                         int noOfStations = GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().StationsOwnedBy();
@@ -137,19 +137,19 @@ public class TriggerEventLewesStation36 : MonoBehaviour
                     switch (noOfStations)
                     {
                         case 0:
-                            GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().subtractmoney(0);
+                            GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().subtractMoney(0);
                             break;
                         case 1:
-                            GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().subtractmoney(25);
+                            GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().subtractMoney(25);
                             break;
                         case 2:
-                            GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().subtractmoney(50);
+                            GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().subtractMoney(50);
                             break;
                         case 3:
-                            GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().subtractmoney(100);
+                            GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().subtractMoney(100);
                             break;
                         case 4:
-                            GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().subtractmoney(200);
+                            GameObject.Find ("Goblet (Tag 'Player3)").GetComponent<money>().subtractMoney(200);
                             break;
                     }
                 }
@@ -167,7 +167,7 @@ public class TriggerEventLewesStation36 : MonoBehaviour
                     int yes = 1;
                     if (yes == 1)
                     {
-                        GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().subtractmoney(200);
+                        GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().subtractMoney(200);
                         OwnedBy = "Hatstand (Tag 'Player4')";
                         GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().purchasedStation();
                         int noOfStations = GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().StationsOwnedBy();
@@ -180,19 +180,19 @@ public class TriggerEventLewesStation36 : MonoBehaviour
                     switch (noOfStations)
                     {
                         case 0:
-                            GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().subtractmoney(0);
+                            GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().subtractMoney(0);
                             break;
                         case 1:
-                            GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().subtractmoney(25);
+                            GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().subtractMoney(25);
                             break;
                         case 2:
-                            GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().subtractmoney(50);
+                            GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().subtractMoney(50);
                             break;
                         case 3:
-                            GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().subtractmoney(100);
+                            GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().subtractMoney(100);
                             break;
                         case 4:
-                            GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().subtractmoney(200);
+                            GameObject.Find ("Hatstand (Tag 'Player4')").GetComponent<money>().subtractMoney(200);
                             break;
 
                     }
@@ -211,7 +211,7 @@ public class TriggerEventLewesStation36 : MonoBehaviour
                     int yes = 1;
                     if (yes == 1)
                     {
-                        GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().subtractmoney(200);
+                        GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().subtractMoney(200);
                         OwnedBy = "Cat (Tag 'Player5')";
                         GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().purchasedStation();
                         int noOfStations = GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().StationsOwnedBy();
@@ -224,19 +224,19 @@ public class TriggerEventLewesStation36 : MonoBehaviour
                     switch (noOfStations)
                     {
                         case 0:
-                            GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().subtractmoney(0);
+                            GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().subtractMoney(0);
                             break;
                         case 1:
-                            GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().subtractmoney(25);
+                            GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().subtractMoney(25);
                             break;
                         case 2:
-                            GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().subtractmoney(50);
+                            GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().subtractMoney(50);
                             break;
                         case 3:
-                            GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().subtractmoney(100);
+                            GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().subtractMoney(100);
                             break;
                         case 4:
-                            GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().subtractmoney(200);
+                            GameObject.Find ("Cat (Tag 'Player5')").GetComponent<money>().subtractMoney(200);
                             break;
 
                     }
@@ -255,7 +255,7 @@ public class TriggerEventLewesStation36 : MonoBehaviour
                     int yes = 1;
                     if (yes == 1)
                     {
-                        GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().subtractmoney(200);
+                        GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().subtractMoney(200);
                         OwnedBy = "Spoon (Tag 'Player6')";
                         GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().purchasedStation();
                         int noOfStations = GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().StationsOwnedBy();
@@ -268,19 +268,19 @@ public class TriggerEventLewesStation36 : MonoBehaviour
                     switch (noOfStations)
                     {
                         case 0:
-                            GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().subtractmoney(0);
+                            GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().subtractMoney(0);
                             break;
                         case 1:
-                            GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().subtractmoney(25);
+                            GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().subtractMoney(25);
                             break;
                         case 2:
-                            GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().subtractmoney(50);
+                            GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().subtractMoney(50);
                             break;
                         case 3:
-                            GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().subtractmoney(100);
+                            GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().subtractMoney(100);
                             break;
                         case 4:
-                            GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().subtractmoney(200);
+                            GameObject.Find ("Spoon (Tag 'Player6')").GetComponent<money>().subtractMoney(200);
                             break;
 
                     }
