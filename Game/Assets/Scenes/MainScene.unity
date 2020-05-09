@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657797, g: 0.4964146, b: 0.57481605, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657767, g: 0.49641377, b: 0.5748144, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1400,9 +1400,9 @@ GameObject:
   m_Component:
   - component: {fileID: 239269712}
   - component: {fileID: 239269710}
-  - component: {fileID: 239269713}
   - component: {fileID: 239269714}
   - component: {fileID: 239269715}
+  - component: {fileID: 239269709}
   m_Layer: 0
   m_Name: Boot (Tag 'Player')
   m_TagString: Player
@@ -1410,6 +1410,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &239269709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239269708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 655819dc0d38571419c53b6cdf34b6c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingTile: {fileID: 1685158493}
+  diceManager: {fileID: 265668476}
+  valueText: {fileID: 1656769633}
 --- !u!136 &239269710
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1439,21 +1454,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -0.377, z: 0}
---- !u!114 &239269713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239269708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 098ff974ec2d147f1a4f38cbc4dc27a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingTile: {fileID: 1685158493}
-  diceManager: {fileID: 265668476}
-  valueText: {fileID: 1656769633}
 --- !u!114 &239269714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1589,7 +1589,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 253551799}
-  - component: {fileID: 253551801}
   - component: {fileID: 253551800}
   m_Layer: 0
   m_Name: TurnManager
@@ -1624,18 +1623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1bd4a18913226b49b8c5f32c1b496d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &253551801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 253551798}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bd4a18913226b49b8c5f32c1b496d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  PlayerTurn: 1
 --- !u!1 &265668475
 GameObject:
   m_ObjectHideFlags: 0
@@ -1673,8 +1661,8 @@ MonoBehaviour:
   EndRollEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 239269713}
-        m_MethodName: MovePlayerToken
+      - m_Target: {fileID: 253551800}
+        m_MethodName: PlayerTurnGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1780,7 +1768,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
 --- !u!1 &269845285
 GameObject:
   m_ObjectHideFlags: 0
