@@ -1672,7 +1672,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1631679262}
+      - m_Target: {fileID: 0}
         m_MethodName: MovePlayerToken
         m_Mode: 1
         m_Arguments:
@@ -1683,7 +1683,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 0
-      - m_Target: {fileID: 1194981266}
+      - m_Target: {fileID: 0}
         m_MethodName: MovePlayerToken
         m_Mode: 1
         m_Arguments:
@@ -1705,7 +1705,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 0
-      - m_Target: {fileID: 424783211}
+      - m_Target: {fileID: 0}
         m_MethodName: MovePlayerToken
         m_Mode: 1
         m_Arguments:
@@ -1716,7 +1716,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 386920919}
+      - m_Target: {fileID: 0}
         m_MethodName: MovePlayerToken
         m_Mode: 1
         m_Arguments:
@@ -1758,7 +1758,7 @@ MonoBehaviour:
   EndRollEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 424783211}
+      - m_Target: {fileID: 0}
         m_MethodName: MovePlayerToken
         m_Mode: 1
         m_Arguments:
@@ -2511,17 +2511,17 @@ GameObject:
   - component: {fileID: 386920923}
   - component: {fileID: 386920922}
   - component: {fileID: 386920921}
-  - component: {fileID: 386920919}
   - component: {fileID: 386920918}
   - component: {fileID: 386920920}
   - component: {fileID: 386920917}
+  - component: {fileID: 386920924}
   m_Layer: 0
   m_Name: Spoon (Tag 'Player6')
   m_TagString: Player6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!54 &386920917
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2555,21 +2555,6 @@ MonoBehaviour:
   WarpExit: {fileID: 821008178}
   stay: 0
   StationsOwned: 0
---- !u!114 &386920919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386920916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 098ff974ec2d147f1a4f38cbc4dc27a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingTile: {fileID: 1685158493}
-  diceManager: {fileID: 265668476}
-  valueText: {fileID: 1656769633}
 --- !u!114 &386920920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2624,6 +2609,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -0.377, z: 0}
+--- !u!114 &386920924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386920916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90a52e93e569f7b4491b7140782df551, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingTile: {fileID: 1685158493}
+  diceManager: {fileID: 265668476}
+  valueText: {fileID: 1656769633}
 --- !u!1 &395081876
 GameObject:
   m_ObjectHideFlags: 0
@@ -3021,18 +3021,18 @@ GameObject:
   - component: {fileID: 424783215}
   - component: {fileID: 424783214}
   - component: {fileID: 424783213}
-  - component: {fileID: 424783211}
   - component: {fileID: 424783210}
   - component: {fileID: 424783216}
   - component: {fileID: 424783209}
   - component: {fileID: 424783212}
+  - component: {fileID: 424783217}
   m_Layer: 0
   m_Name: Cat (Tag 'Player5')
   m_TagString: Player5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!54 &424783209
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3066,21 +3066,6 @@ MonoBehaviour:
   WarpExit: {fileID: 821008178}
   stay: 0
   StationsOwned: 0
---- !u!114 &424783211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424783208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 098ff974ec2d147f1a4f38cbc4dc27a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingTile: {fileID: 1685158493}
-  diceManager: {fileID: 265668476}
-  valueText: {fileID: 1656769633}
 --- !u!95 &424783212
 Animator:
   serializedVersion: 3
@@ -3154,6 +3139,21 @@ MonoBehaviour:
   WarpExit: {fileID: 0}
   stay: 0
   StationsOwned: 0
+--- !u!114 &424783217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424783208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b1dba2223ac2f147ab8c72e7c590791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingTile: {fileID: 1685158493}
+  diceManager: {fileID: 265668476}
+  valueText: {fileID: 1656769633}
 --- !u!1001 &434389486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8701,17 +8701,17 @@ GameObject:
   - component: {fileID: 1194981270}
   - component: {fileID: 1194981269}
   - component: {fileID: 1194981268}
-  - component: {fileID: 1194981266}
   - component: {fileID: 1194981265}
   - component: {fileID: 1194981267}
   - component: {fileID: 1194981264}
+  - component: {fileID: 1194981271}
   m_Layer: 0
   m_Name: Goblet (Tag 'Player3)
   m_TagString: Player3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!54 &1194981264
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8745,21 +8745,6 @@ MonoBehaviour:
   WarpExit: {fileID: 821008178}
   stay: 0
   StationsOwned: 0
---- !u!114 &1194981266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1194981263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 098ff974ec2d147f1a4f38cbc4dc27a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingTile: {fileID: 1685158493}
-  diceManager: {fileID: 265668476}
-  valueText: {fileID: 1656769633}
 --- !u!114 &1194981267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8814,6 +8799,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: -0.377, z: 0}
+--- !u!114 &1194981271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194981263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 984bfde2e23b3a849924c6c1bcee05ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingTile: {fileID: 1685158493}
+  diceManager: {fileID: 265668476}
+  valueText: {fileID: 1656769633}
 --- !u!1001 &1203886670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10677,17 +10677,17 @@ GameObject:
   - component: {fileID: 1539546431}
   - component: {fileID: 1539546430}
   - component: {fileID: 1539546429}
-  - component: {fileID: 1539546427}
   - component: {fileID: 1539546426}
   - component: {fileID: 1539546428}
   - component: {fileID: 1539546425}
+  - component: {fileID: 1539546432}
   m_Layer: 0
   m_Name: Hatstand (Tag 'Player4')
   m_TagString: Player4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!54 &1539546425
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10721,21 +10721,6 @@ MonoBehaviour:
   WarpExit: {fileID: 821008178}
   stay: 0
   StationsOwned: 0
---- !u!114 &1539546427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539546424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 098ff974ec2d147f1a4f38cbc4dc27a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingTile: {fileID: 1685158493}
-  diceManager: {fileID: 265668476}
-  valueText: {fileID: 1656769633}
 --- !u!114 &1539546428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10790,6 +10775,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: -0.377, z: 0}
+--- !u!114 &1539546432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539546424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9abb519af6dbc4fba4c2b5515a3826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingTile: {fileID: 1685158493}
+  diceManager: {fileID: 265668476}
+  valueText: {fileID: 1656769633}
 --- !u!114 &1549449981 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114830736599110252, guid: 5185e18f10f47420ab5dfcc2c0acfc76,
@@ -11285,17 +11285,17 @@ GameObject:
   m_Component:
   - component: {fileID: 1631679266}
   - component: {fileID: 1631679264}
-  - component: {fileID: 1631679262}
   - component: {fileID: 1631679261}
   - component: {fileID: 1631679263}
   - component: {fileID: 1631679260}
+  - component: {fileID: 1631679265}
   m_Layer: 0
   m_Name: Smartphone (Tag 'Player2')
   m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!54 &1631679260
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11329,21 +11329,6 @@ MonoBehaviour:
   WarpExit: {fileID: 821008178}
   stay: 0
   StationsOwned: 0
---- !u!114 &1631679262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631679259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 098ff974ec2d147f1a4f38cbc4dc27a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingTile: {fileID: 1685158493}
-  diceManager: {fileID: 265668476}
-  valueText: {fileID: 1656769633}
 --- !u!114 &1631679263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11375,6 +11360,21 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1631679265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631679259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6bcaf404dfbb174296db9b8505d990c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingTile: {fileID: 1685158493}
+  diceManager: {fileID: 265668476}
+  valueText: {fileID: 1656769633}
 --- !u!4 &1631679266
 Transform:
   m_ObjectHideFlags: 0
